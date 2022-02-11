@@ -32,6 +32,9 @@ def confronto_medusa():
     else:
         print('Essa não uma opção, jovem espachim.')
 
+def azetris():
+    pass
+
 if __name__ == '__main__':
     print(confronto_medusa())
     #print(luta_trooll())
