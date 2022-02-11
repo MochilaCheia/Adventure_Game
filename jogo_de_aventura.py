@@ -1,5 +1,5 @@
 import random
-
+import batalhas
 from time import sleep
 
 
@@ -35,8 +35,8 @@ if acao == '1':
     acao = input('Você:\n1) Levanta e vai a procura de comida, abrigo e roupas para se vestir.\n2) Se irrita com o mago e tenta bater nele com alguma coisa perto de você.\n\n')
 
     if acao == '1':
-        monstros = ['** Troll de diamante **', ' >> Pombo-fênix <<', '## Porco-espinho de leite ##']
-        criatura = random.choice(monstros)
+        monstros = [('** Troll de diamante **', Lutas.luta_troll), 'Matheus', 'Sil']
+        criatura, luta = random.choice(monstros)
         sleep(2)
         print('Ao procurar comida, você se depara nada mais nada menos do que um... {}\n' .format(criatura))
         sleep(3)
@@ -53,14 +53,25 @@ if acao == '1':
             print('Você morreu.')
 
         elif acao == '2':
-            print('')
+            print('Você se esconde em um arbusto e observa o comportamento do/da...')
             acao = input('')
             pass
 
     elif acao == '2':
-        print('')
-        acao = input('')
-        pass
+        print('Você joga pedras e galhos nele mas todas simplesmente atravessam seu corpo, você então pega um galho grande ao seu lado e mesmo assim tenta bater nele.\nO fantasma para o bastão com a mão e diz:')
+        print('\n"- Deixe meu cajado mágico em paz". o cajado então fica translúcido.\n')
+        print('\n\nVocê fica admirado e então pergunta novamente:\n\n"- Quem sou eu e o que eu estou fazendo aqui?"\n')
+        acao = input('\nVocê:\n1) se desculpa por tentar acertar ele mais cedo.\n2) se levanta irritado, pega sua espada e vai caçar alguma coisa, procurar dentro de uma caverna.\n')
+
+        if acao == '1':
+            print('')
+            input('')
+            pass
+
+        elif acao == '2':
+            print('')
+            input('')
+            pass
 
 elif acao == '2':
     sleep(2)
