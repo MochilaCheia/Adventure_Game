@@ -16,9 +16,9 @@ print('Ao abrir seus olhos e observar seu entorno encontra\num cenário nada fam
 sleep(6)
 print('Enquanto continua procurando alguma coisa que te lembre algo você apenas vê uma espada ao seu lado e se questiona\nporque está sem roupas e com fome, quando de repente...\nBOOM, UM FANTASMA DE UM MAGO VELHO APARECE NA SUA FRENTE FALANDO TANTA COISA QUE TE DEIXA ATORDOADO.')
 sleep(6)
-print('Você está assustado, mas precisa tomar uma decisão:\n')
+print('Você está assustado mas precisa tomar uma decisão:\n')
 
-acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide fugir para a floresta e procurar a aldeia humana mais próxima, afinal você está com medo de ser assombrado.\n\n>> Digite apenas o número 1 ou número 2 para escolher. <<\n\n')
+acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide fugir para a floresta e procurar a aldeia humana mais próxima, afinal você está com medo de ser assombrado.\n\n>> Digite 1 ou 2 para escolher. <<\n')
 
 if acao == '1':
     sleep(2)
@@ -32,25 +32,24 @@ if acao == '1':
     sleep(2)
     print('\nbate uma brisa de vento e você nota que está com fome.\n')
 
-    acao = input('Você:\n1) Levanta e vai a procura de comida, abrigo e roupas para se vestir.\n2) Se irrita com o mago e tenta bater nele com alguma coisa perto de você.\n\n')
+    acao = input('Você:\n1) Levanta e vai a procura de comida, abrigo e roupas para se vestir.\n2) Se irrita com o mago e tenta bater nele com alguma coisa perto de você.\n')
 
     if acao == '1':
+<<<<<<< HEAD:jogo_de_aventura.py
         monstros = [('** Troll de diamante **', Lutas.luta_troll), 'Matheus', 'Sil']
         criatura, luta = random.choice(monstros)
         sleep(2)
+=======
+        monstros = ['Troll de diamante', 'Pombo-fênix', 'Porco-espinho de leite']
+        criatura = random.choice(monstros)
+>>>>>>> parent of ad3fc0f (Terceira rota finalizada e melhor estrutura de história sintática.):Jogo_de_aventura.py
         print('Ao procurar comida, você se depara nada mais nada menos do que um... {}\n' .format(criatura))
-        sleep(3)
-        print('E agora, o que você fará?\n')
-        sleep(3)
-        acao = input('1) sacar sua espada e atacar a criatura sem parar.\n2) Observar enquanto se afasta da criatura sem chamar sua atenção.\n\n')
+        acao = input('E agora, o que você fará?\n 1) sacar sua espada e atacar a criatura sem parar.\n2) Observar enquanto se afasta da criatura sem chamar sua atenção.')
 
         if acao == '1':
-            sleep(3)
-            print('Ao atacar a criatura sem parar você quebra sua espada e fica indefeso.')
-            sleep(4)
-            print('a criatura se enfurece pelos ataques e usa suas garras para rasgar seu peito desprotegido.')
-            sleep(4)
-            print('Você morreu.')
+            print('')
+            acao = input('')
+            pass
 
         elif acao == '2':
             print('Você se esconde em um arbusto e observa o comportamento do/da...')
