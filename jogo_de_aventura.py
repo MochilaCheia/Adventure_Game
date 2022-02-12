@@ -1,10 +1,7 @@
 import random
-import batalhas
 from time import sleep
 
-
-def input_invalido():
-  pass
+nome_player = input('Vamos começar! Qual seu nome?')
 
 print('Durante a Era do Rei Arthur e seus doze Cavaleiros, monstros e criaturas ainda eram comuns no mundo,\nseres fantásticos que hoje apenas existem no imaginário das pessoas. \nE essa é história das suas aventuras, conquistas e perdas na última era dos monstros e magia.')
 sleep(6)
@@ -38,7 +35,7 @@ if acao == '1':
         monstros = [('** Troll de diamante **', Lutas.luta_troll), 'Matheus', 'Sil']
         criatura, luta = random.choice(monstros)
         sleep(2)
-        print('Ao procurar comida, você se depara nada mais nada menos do que um... {}\n' .format(criatura))
+        print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um... {}\n' .format(criatura))
         sleep(3)
         print('E agora, o que você fará?\n')
         sleep(3)
@@ -80,7 +77,3 @@ elif acao == '2':
     print('você está desprotegido e deixou sua espada lá trás, você é atacado e morre lentamente com o veneno.')
     sleep(5)
     print('Você morreu.')
-
-else:
-    input_invalido()
-    pass

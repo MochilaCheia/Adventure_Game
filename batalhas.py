@@ -1,7 +1,11 @@
+from time import sleep
+
 def luta_troll():
     golpes = ['3', '5', '7']
     ponto_critico = '7'
+    sleep(2)
     print('Um troll de diamante selvagem apareceu! e você precisa atacar!')
+    sleep(3)
     escolha = input('Quantos golpes você vai dar?\nOpções: '+','.join(golpes))
     if escolha == '3':
         print('Não foi o bastante pra derrotar o troll de diamante selvagem.')
@@ -15,7 +19,9 @@ def luta_troll():
 def confronto_medusa():
     corpo_medusa = ['Cabeça', 'Pescoço', 'Torso', 'Barriga', 'Braços', 'Pernas']
     golpe_final = 'Pescoço'
+    sleep(2)
     print('Você só tem uma única chance de matar a Medusa, acertando seu ponto fraco, escolha com sabedoria aonde vai atacar.')
+    sleep(3)
     ataque = input('Só poderá atacar nesses lugares, escolha um e digite para atacar: '+','.join(corpo_medusa))
     if ataque == 'Cabeça':
         print('A cabeça da Medusa está cheia de cobras que defendem seu ataque, te picam e o veneno te transforma em pedra.')
@@ -33,8 +39,15 @@ def confronto_medusa():
         print('Essa não uma opção, jovem espachim.')
 
 def azetris():
-    pass
+    tentativa = int(input('Quantos golpes você acha necessário para derrotar o monstro azetris:\n~~Digite o número~~\n'))
+    golpes_necessarios = [2, 3, 4, 5, 6, 8, 9, 10 , 11, 12, 13, 14, 15, 16, 17, 18]
+    for busca in golpes_necessarios:
+        if tentativa >= 18:
+            print('Você acertou ele: {} vezes' .format(busca))
+            break
 
 if __name__ == '__main__':
-    print(confronto_medusa())
-    #print(luta_trooll())
+    #print(azetris())
+    #print(confronto_medusa())
+    #print(luta_troll())
+    pass
