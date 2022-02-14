@@ -46,6 +46,16 @@ def azetris():
             print('Você acertou ele: {} vezes' .format(busca))
             break
 
+def ultima_luta():
+    protagonista = 100
+    antagonista = 100
+    golpe_espada = -5
+    golpe_machado = -15
+    soco = -5
+    chute = -10
+    cabeçada = -3
+    #if, while ou for?
+
 if __name__ == '__main__':
     #print(azetris())
     #print(confronto_medusa())

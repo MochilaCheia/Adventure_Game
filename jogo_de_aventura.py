@@ -1,7 +1,8 @@
 import random
 from time import sleep
 
-nome_player = input('Vamos começar! Qual seu nome?')
+def player():
+    nome_player = input('Vamos começar! Qual seu nome?')
 
 print('Durante a Era do Rei Arthur e seus doze Cavaleiros, monstros e criaturas ainda eram comuns no mundo,\nseres fantásticos que hoje apenas existem no imaginário das pessoas. \nE essa é história das suas aventuras, conquistas e perdas na última era dos monstros e magia.')
 sleep(6)
@@ -49,6 +50,8 @@ if acao == '1':
             sleep(4)
             print('Você morreu.')
 
+# Final da primeira rota.
+
         elif acao == '2':
             print('Você se esconde em um arbusto e observa o comportamento do/da...')
             acao = input('')
@@ -77,3 +80,5 @@ elif acao == '2':
     print('você está desprotegido e deixou sua espada lá trás, você é atacado e morre lentamente com o veneno.')
     sleep(5)
     print('Você morreu.')
+
+# Final da segunda rota.

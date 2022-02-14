@@ -15,7 +15,8 @@ def final_incompleto():
     print('Vejo você logo!')
 
 def final_conclusao():
-    print('')
+    print('Parabéns, herói! Você finalizou o jogo, chegando em um dos finais da história, você passou por inúmeros desafios e ganhei muita experiência e só precisou de N.horas.\n')
+    print('Você tomou N.decisões até chegar aqui.')
 
 def final_encerramento():
     print('Uma realização de Paulo Vieira\nEm parceria com Silmara\n Com o apoio, ensino e paciência de Matheus')
