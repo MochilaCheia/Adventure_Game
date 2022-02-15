@@ -55,7 +55,8 @@ if acao == '1':
         elif acao == '2':
             print('Você se esconde em um arbusto e observa o comportamento do/da...')
             acao = input('')
-            pass
+
+# FLAG: história continua aqui #1
 
     elif acao == '2':
         print('Você joga pedras e galhos nele mas todas simplesmente atravessam seu corpo, você então pega um galho grande ao seu lado e mesmo assim tenta bater nele.\nO fantasma para o bastão com a mão e diz:')
@@ -64,14 +65,19 @@ if acao == '1':
         acao = input('\nVocê:\n1) se desculpa por tentar acertar ele mais cedo.\n2) se levanta irritado, pega sua espada e vai caçar alguma coisa, procurar dentro de uma caverna.\n')
 
         if acao == '1':
-            print('')
-            input('')
-            pass
+            print('O Mago te lança um olhar frio e então suspira e diz:\n')
+            input('\n"- Você sempre foi assim, desde de pequeno, não me surpreende que tenha puxado tanto ele com seu jeito impulsivo".')
+
+# FLAG: história continua aqui #2
 
         elif acao == '2':
-            print('')
-            input('')
-            pass
+            print('Você acaba em um ambiente atípico e hostil, seus instintos te dizem pra correr o mais rápido e pra mais longe que puder,\nmas antes que tenha tempo pra virar e fugir, você é cercado por uma criatura... uma só? ou várias?\n')
+            print('\nVocê não acredita no que seus olhos estão te mostrando, ao mesmo tempo que são várias criaturas parecem ser... uma só?')
+            print('\nUm monstro bizarro e nojento ou uma alcatéia de grandes lobos selvagens\ncom pêlos escuros como a noite e no meio deles, tem tentáculos de um polvo gigante saindo, mas nem estamos perto do mar???')
+            print('\nIndependentemente de quão bizarra seja essa situação, você precisa se mover,\nprecisa tomar uma atitude e logo, antes que seja tarde')
+            input('1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e investe nisso')
+
+# FLAG: história continua aqui #3
 
 elif acao == '2':
     sleep(2)
