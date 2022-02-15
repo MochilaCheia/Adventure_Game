@@ -1,3 +1,4 @@
+import random
 from time import sleep
 
 def luta_troll():
@@ -6,13 +7,14 @@ def luta_troll():
     sleep(2)
     print('Um troll de diamante selvagem apareceu! e você precisa atacar!')
     sleep(3)
+    #while
     escolha = input('Quantos golpes você vai dar?\nOpções: '+','.join(golpes))
     if escolha == '3':
         print('Não foi o bastante pra derrotar o troll de diamante selvagem.')
     elif escolha == '5':
         print('Faltou tão pouco pra derrotar ele.')
     elif escolha == ponto_critico:
-        print('Você acertou no ponto fraco da armadura de cristais e finalmente derretou ele.\nParabéns jovem espachim! você se saiu vitorioso!')
+        print('Você acertou no ponto fraco da armadura de cristais e finalmente derrotou ele.\nParabéns jovem espachim! você se saiu vitorioso!')
     else:
         print('Essa não é uma opção, jovem guerreiro.')
 
@@ -38,13 +40,26 @@ def confronto_medusa():
     else:
         print('Essa não uma opção, jovem espachim.')
 
-def azetris():
+def luta_azetris():
     tentativa = int(input('Quantos golpes você acha necessário para derrotar o monstro azetris:\n~~Digite o número~~\n'))
     golpes_necessarios = [2, 3, 4, 5, 6, 8, 9, 10 , 11, 12, 13, 14, 15, 16, 17, 18]
     for busca in golpes_necessarios:
         if tentativa >= 18:
             print('Você acertou ele: {} vezes' .format(busca))
             break
+
+def batalha_acylla():
+    pass
+
+def confronto_hydra():
+    desvios = ['Esquerda', 'Direita', 'Meio', 'Cima', 'Baixo']
+    ataque = input('Adivinha:')
+    while ataque != 'Desisto':
+        regenerando_direcao = random.choice(desvios)
+        if ataque == regenerando_direcao:
+            print(regenerando_direcao)
+            print('Você acertou!')
+            nova_chance = input('continuar?')
 
 def ultima_luta():
     protagonista = 100
@@ -56,8 +71,11 @@ def ultima_luta():
     cabeçada = -3
     #if, while ou for?
 
+
 if __name__ == '__main__':
-    #print(azetris())
+    #print(luta_azetris())
     #print(confronto_medusa())
     #print(luta_troll())
-    pass
+    #print(batalha_acylla())
+    #print(confronto_hydra())
+    # print(ultima_luta())
