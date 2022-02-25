@@ -56,6 +56,7 @@ if acao == '1':
             print('Você se esconde em um arbusto e observa o comportamento do/da...')
             acao = input('')
 
+# FLAG: função de luta entra nessa rota da história #1
 # FLAG: história continua aqui #1
 
     elif acao == '2':
@@ -66,7 +67,18 @@ if acao == '1':
 
         if acao == '1':
             print('O Mago te lança um olhar frio e então suspira e diz:\n')
-            input('\n"- Você sempre foi assim, desde de pequeno, não me surpreende que tenha puxado tanto ele com seu jeito impulsivo".')
+            print('\n"- Você sempre foi assim, desde de pequeno, não me surpreende que tenha puxado tanto ele com seu jeito impulsivo".')
+            print('\n"- DE QUEM VOCÊ TÁ FALANDO SEU VELHO SENIL?"- você grita confuso e com dores de cabeça.\n')
+            print('\n"- Hora de quem mais? não me diga que não se lembra"')
+            print('\n"- NÃO, EU NÃO CONSIGO ME LEMBRAR DE NADA! "')
+            print('\n"- Estou falando do seu pai, Arthur..."')
+
+
+            if acao == '1':
+                print('')
+
+            elif acao == '2':
+                print('')
 
 # FLAG: história continua aqui #2
 
@@ -76,6 +88,12 @@ if acao == '1':
             print('\nUm monstro bizarro e nojento ou uma alcatéia de grandes lobos selvagens\ncom pêlos escuros como a noite e no meio deles, tem tentáculos de um polvo gigante saindo, mas nem estamos perto do mar???')
             print('\nIndependentemente de quão bizarra seja essa situação, você precisa se mover,\nprecisa tomar uma atitude e logo, antes que seja tarde')
             input('1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e investe nisso')
+
+            if acao == '1':
+                print('')
+
+            elif acao == '2':
+                print('')
 
 # FLAG: história continua aqui #3
 
