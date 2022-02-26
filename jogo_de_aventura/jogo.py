@@ -29,6 +29,7 @@ if acao == '1':
     print('\nO que ele quis dizer com isso? - você se pergunta.')
     sleep(2)
     print('\nbate uma brisa de vento e você nota que está com fome.\n')
+    sleep(4)
 
     acao = input('Você:\n1) Levanta e vai a procura de comida, abrigo e roupas para se vestir.\n2) Se irrita com o mago e tenta bater nele com alguma coisa perto de você.\n\n')
 
@@ -40,6 +41,7 @@ if acao == '1':
         sleep(3)
         print('E agora, o que você fará?\n')
         sleep(3)
+
         acao = input('1) sacar sua espada e atacar a criatura sem parar.\n2) Observar enquanto se afasta da criatura sem chamar sua atenção.\n\n')
 
         if acao == '1':
@@ -53,49 +55,109 @@ if acao == '1':
 # Final da primeira rota.
 
         elif acao == '2':
+            sleep(2)
             print('Você se esconde em um arbusto e observa o comportamento do/da...')
+
             acao = input('')
+
+            if acao == '1':
+                sleep()
+                print('')
+                sleep()
+
+                acao = input('')
+
+            elif acao == '2':
+                sleep()
+                print('')
+                sleep()
+
+                acao = input('')
 
 # FLAG: função de luta entra nessa rota da história #1
 # FLAG: história continua aqui #1
 
     elif acao == '2':
+        sleep(3)
         print('Você joga pedras e galhos nele mas todas simplesmente atravessam seu corpo, você então pega um galho grande ao seu lado e mesmo assim tenta bater nele.\nO fantasma para o bastão com a mão e diz:')
+        sleep(3)
         print('\n"- Deixe meu cajado mágico em paz". o cajado então fica translúcido.\n')
+        sleep(4)
         print('\n\nVocê fica admirado e então pergunta novamente:\n\n"- Quem sou eu e o que eu estou fazendo aqui?"\n')
+        sleep(5)
+
         acao = input('\nVocê:\n1) se desculpa por tentar acertar ele mais cedo.\n2) se levanta irritado, pega sua espada e vai caçar alguma coisa, procurar dentro de uma caverna.\n')
 
         if acao == '1':
+            sleep(2)
             print('O Mago te lança um olhar frio e então suspira e diz:\n')
+            sleep(3)
             print('\n"- Você sempre foi assim, desde de pequeno, não me surpreende que tenha puxado tanto ele com seu jeito impulsivo".')
+            sleep(2)
             print('\n"- DE QUEM VOCÊ TÁ FALANDO SEU VELHO SENIL?"- você grita confuso e com dores de cabeça.\n')
+            sleep(2)
             print('\n"- Hora de quem mais? não me diga que não se lembra"')
+            sleep(2)
             print('\n"- NÃO, EU NÃO CONSIGO ME LEMBRAR DE NADA! "')
+            sleep(2)
             print('\n"- Estou falando do seu pai, Arthur..."')
+            sleep(4)
+            print('\nNesse momento um flash de memória passa pela sua mente, imagens aparentemente desconexas se juntam, não formam uma imagem muito clara\nMas é possível ver um homem alto, segurando algo... uma bainha? NÃO! É SEM DÚVIDA NENHUMA UMA ESPADA!\n')
+            sleep(3)
+            print('\nVoltando a sí, você respira fundo e olha pro velho fantasma, ele está te olhando estranho,então você toma coragem e...')
+            sleep(5)
+
+            acao = input('\n1)Diz "-Eu não me lembro de realmente nada sobre mim, por favor velho, me diga tudo que sabe, quem é você? quem sou eu? quem... quem é meu pai?" \n2)Pergunta "- Me diga o que fazer, como faço para reaver minhas memórias?"')
 
 
             if acao == '1':
+                sleep()
                 print('')
+                sleep()
 
-            elif acao == '2':
-                print('')
+                acao = input('')
 
 # FLAG: história continua aqui #2
 
-        elif acao == '2':
-            print('Você acaba em um ambiente atípico e hostil, seus instintos te dizem pra correr o mais rápido e pra mais longe que puder,\nmas antes que tenha tempo pra virar e fugir, você é cercado por uma criatura... uma só? ou várias?\n')
-            print('\nVocê não acredita no que seus olhos estão te mostrando, ao mesmo tempo que são várias criaturas parecem ser... uma só?')
-            print('\nUm monstro bizarro e nojento ou uma alcatéia de grandes lobos selvagens\ncom pêlos escuros como a noite e no meio deles, tem tentáculos de um polvo gigante saindo, mas nem estamos perto do mar???')
-            print('\nIndependentemente de quão bizarra seja essa situação, você precisa se mover,\nprecisa tomar uma atitude e logo, antes que seja tarde')
-            input('1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e investe nisso')
-
-            if acao == '1':
-                print('')
-
             elif acao == '2':
+                sleep()
                 print('')
+                sleep()
+
+                acao = input('')
 
 # FLAG: história continua aqui #3
+
+        elif acao == '2':
+            sleep(2)
+            print('Você acaba em um ambiente atípico e hostil, seus instintos te dizem pra correr o mais rápido e pra mais longe que puder,\nmas antes que tenha tempo pra virar e fugir, você é cercado por uma criatura... uma só? ou várias?\n')
+            sleep(4)
+            print('\nVocê não acredita no que seus olhos estão te mostrando, ao mesmo tempo que são várias criaturas parecem ser... uma só?')
+            sleep(5)
+            print('\nUm monstro bizarro e nojento ou uma alcatéia de grandes lobos selvagens\ncom pêlos escuros como a noite e no meio deles, tem tentáculos de um polvo gigante saindo, mas nem estamos perto do mar???')
+            sleep(4)
+            print('\nIndependentemente de quão bizarra seja essa situação, você precisa se mover,\nprecisa tomar uma atitude e logo, antes que seja tarde')
+            sleep(4)
+
+            acao = input('1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e investe nisso')
+
+            if acao == '1':
+                sleep()
+                print('')
+                sleep()
+
+                acao = input('')
+
+# FLAG: história continua aqui #4
+
+            elif acao == '2':
+                sleep()
+                print('')
+                sleep()
+
+                acao = input('')
+
+# FLAG: história continua aqui #5
 
 elif acao == '2':
     sleep(2)
