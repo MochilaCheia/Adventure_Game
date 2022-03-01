@@ -26,15 +26,17 @@ if acao == '1':
     sleep(3)
     print('\n" - Essa sua idéia de explorar as cavernas de relíquias não poderia ser pior".')
     sleep(3)
-    print('\nO que ele quis dizer com isso? - você se pergunta.')
+    print('O que ele quis dizer com isso? - você se pergunta.')
     sleep(2)
-    print('\nbate uma brisa de vento e você nota que está com fome.\n')
+    print('bate uma brisa de vento e você nota que está com fome.\n')
     sleep(4)
 
     acao = input('Você:\n1) Levanta e vai a procura de comida, abrigo e roupas para se vestir.\n2) Se irrita com o mago e tenta bater nele com alguma coisa perto de você.\n\n')
 
+# FlAG: parte em construção e desenvolvimento
+
     if acao == '1':
-        monstros = [('** Troll de diamante **', Lutas.luta_troll), 'Matheus', 'Sil']
+        monstros = [('** Troll de diamante **', Lutas.luta_troll), '', '']
         criatura, luta = random.choice(monstros)
         sleep(2)
         print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um... {}\n' .format(criatura))
@@ -52,7 +54,7 @@ if acao == '1':
             sleep(4)
             print('Você morreu.')
 
-# Final da primeira rota.
+# REDFLAG: Final da primeira rota.
 
         elif acao == '2':
             sleep(2)
@@ -83,7 +85,7 @@ if acao == '1':
         sleep(3)
         print('\n"- Deixe meu cajado mágico em paz". o cajado então fica translúcido.\n')
         sleep(4)
-        print('\n\nVocê fica admirado e então pergunta novamente:\n\n"- Quem sou eu e o que eu estou fazendo aqui?"\n')
+        print('Você fica admirado e então pergunta novamente:\n\n"- Quem sou eu e o que eu estou fazendo aqui?"\n')
         sleep(5)
 
         acao = input('\nVocê:\n1) se desculpa por tentar acertar ele mais cedo.\n2) se levanta irritado, pega sua espada e vai caçar alguma coisa, procurar dentro de uma caverna.\n')
@@ -102,9 +104,9 @@ if acao == '1':
             sleep(2)
             print('\n"- Estou falando do seu pai, Arthur..."')
             sleep(4)
-            print('\nNesse momento um flash de memória passa pela sua mente, imagens aparentemente desconexas se juntam, não formam uma imagem muito clara\nMas é possível ver um homem alto, segurando algo... uma bainha? NÃO! É SEM DÚVIDA NENHUMA UMA ESPADA!\n')
+            print('Nesse momento um flash de memória passa pela sua mente, imagens aparentemente desconexas se juntam, não formam uma imagem muito clara\nMas é possível ver um homem alto, segurando algo... uma bainha? NÃO! É SEM DÚVIDA NENHUMA UMA ESPADA!\n')
             sleep(3)
-            print('\nVoltando a sí, você respira fundo e olha pro velho fantasma, ele está te olhando estranho,então você toma coragem e...')
+            print('Voltando a sí, você respira fundo e olha pro velho fantasma, ele está te olhando estranho,então você toma coragem e...')
             sleep(5)
 
             acao = input('\n1)Diz "-Eu não me lembro de realmente nada sobre mim, por favor velho, me diga tudo que sabe, quem é você? quem sou eu? quem... quem é meu pai?" \n2)Pergunta "- Me diga o que fazer, como faço para reaver minhas memórias?"')
@@ -120,26 +122,50 @@ if acao == '1':
 # FLAG: história continua aqui #2
 
             elif acao == '2':
-                sleep()
-                print('')
-                sleep()
+                sleep(2)
+                print('\n"- Eu não sei a causa que te fez perder suas mémorias, menino Arthur.\nPórem temo que só vá consegui-las novamente após achar a causa por de trás disso."')
+                sleep(3)
+                print('\n"- Por onde eu deveria começar se não me lembro de nada?"')
+                sleep(3)
+                print('\n"- Pelo mesmo motivo que nos trouxe aqui, a caverna de cristais espirais. Nós viemos atrás de suas riquezas e poderes."')
+                sleep(4)
+                print('\n"- Me mostre o caminho então, velho razinza."')
+                sleep(3)
+                print('O mago aponta por de dentro da floresta, segundo ele: a caverna está no coração da floresta de caldas,\ne quanto mais próxima dela mais criaturas poderosas e versáteis habitam.')
+                sleep(3)
 
-                acao = input('')
+                acao = input('Você deve decidir:\n1) Seguir direto até a caverna, o mais rápido que puder e se preparar para enfrentar todo tipo de criatura existente 2) Planejar e mapear a floresta, perder dias estudando o local e anotar tudo para os próximos que vierem até aqui.')
+
+                    if acao == '1':
+                        sleep()
+                        print('')
+                        sleep()
+
+                        acao = input('')
 
 # FLAG: história continua aqui #3
+
+                    elif acao == '2':
+                        sleep()
+                        print('')
+                        sleep('')
+
+                        acao = input('')
+
+# FLAG: história continua aqui #4
 
         elif acao == '2':
             sleep(2)
             print('Você acaba em um ambiente atípico e hostil, seus instintos te dizem pra correr o mais rápido e pra mais longe que puder,\nmas antes que tenha tempo pra virar e fugir, você é cercado por uma criatura... uma só? ou várias?\n')
             sleep(4)
-            print('\nVocê não acredita no que seus olhos estão te mostrando, ao mesmo tempo que são várias criaturas parecem ser... uma só?')
+            print('Você não acredita no que seus olhos estão te mostrando, ao mesmo tempo que são várias criaturas parecem ser... uma só?')
             sleep(5)
-            print('\nUm monstro bizarro e nojento ou uma alcatéia de grandes lobos selvagens\ncom pêlos escuros como a noite e no meio deles, tem tentáculos de um polvo gigante saindo, mas nem estamos perto do mar???')
+            print('Um monstro bizarro e nojento ou uma alcatéia de grandes lobos selvagens\ncom pêlos escuros como a noite e no meio deles, tem tentáculos de um polvo gigante saindo, mas nem estamos perto do mar???')
             sleep(4)
-            print('\nIndependentemente de quão bizarra seja essa situação, você precisa se mover,\nprecisa tomar uma atitude e logo, antes que seja tarde')
+            print('Independentemente de quão bizarra seja essa situação, você precisa se mover,\nprecisa tomar uma atitude e logo, antes que seja tarde')
             sleep(4)
 
-            acao = input('1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e investe nisso')
+            acao = input('\n1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e investe nisso')
 
             if acao == '1':
                 sleep()
@@ -148,7 +174,7 @@ if acao == '1':
 
                 acao = input('')
 
-# FLAG: história continua aqui #4
+# FLAG: história continua aqui #5
 
             elif acao == '2':
                 sleep()
@@ -157,7 +183,7 @@ if acao == '1':
 
                 acao = input('')
 
-# FLAG: história continua aqui #5
+# FLAG: história continua aqui #6
 
 elif acao == '2':
     sleep(2)
@@ -167,4 +193,4 @@ elif acao == '2':
     sleep(5)
     print('Você morreu.')
 
-# Final da segunda rota.
+# REDFLAG: Final da segunda rota.
