@@ -36,7 +36,7 @@ if acao == '1':
 # FlAG: parte em construção e desenvolvimento
 
     if acao == '1':
-        monstros = [('** Troll de diamante **', Lutas.luta_troll), '', '']
+        monstros = [('** Troll de diamante **'), '', '']
         criatura, luta = random.choice(monstros)
         sleep(2)
         print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um... {}\n' .format(criatura))
@@ -109,17 +109,36 @@ if acao == '1':
             print('Voltando a sí, você respira fundo e olha pro velho fantasma, ele está te olhando estranho,então você toma coragem e...')
             sleep(5)
 
-            acao = input('\n1)Diz "-Eu não me lembro de realmente nada sobre mim, por favor velho, me diga tudo que sabe, quem é você? quem sou eu? quem... quem é meu pai?" \n2)Pergunta "- Me diga o que fazer, como faço para reaver minhas memórias?"')
+            acao = input('\n1)Diz: "- Eu quero saber quem eu sou e farei o necessário para descobrir, não importando o preço." \n2)Pergunta: "- Me diga o que fazer, como faço para reaver minhas memórias?"')
 
 
             if acao == '1':
-                sleep()
-                print('')
-                sleep()
+                sleep(2)
+                print('\n"- Seu pai não aprovaria seu comportamento, Arthur. ele te deixou essa espada pra proteger os fracos e inocentes."')
+                sleep(3)
+                print('\n"- Ela está em minha posse agora e farei dela o começo do meu império, independente dos motivos de meu pai, essa espada será usada pra conquistar."')
+                sleep(3)
+                print('\n"- Vamos começar com essa floresta mago, me diga como torna-lá minha, ela será meu primeiro passo. Depois de conquistar o mundo, tenho certeza que minhas memórias retornarão"')
 
-                acao = input('')
+                acao = input('1) "- Se deseja conquistar essas terras, subjulgue todas as criaturas que vivem aqui." 2) "- O começo do mal está na ganância, tem certeza que deseja desviar do seu caminho?"')
+
+                if acao == '1':
+                    sleep()
+                    print('')
+                    sleep()
+
+                    acao = input('')
 
 # FLAG: história continua aqui #2
+
+                elif acao == '1':
+                    sleep()
+                    print('')
+                    sleep()
+
+                    acao = input('')
+
+# FLAG: história continua aqui #3
 
             elif acao == '2':
                 sleep(2)
@@ -136,23 +155,23 @@ if acao == '1':
 
                 acao = input('Você deve decidir:\n1) Seguir direto até a caverna, o mais rápido que puder e se preparar para enfrentar todo tipo de criatura existente 2) Planejar e mapear a floresta, perder dias estudando o local e anotar tudo para os próximos que vierem até aqui.')
 
-                    if acao == '1':
-                        sleep()
-                        print('')
-                        sleep()
+                if acao == '1':
+                    sleep()
+                    print('')
+                    sleep()
 
-                        acao = input('')
-
-# FLAG: história continua aqui #3
-
-                    elif acao == '2':
-                        sleep()
-                        print('')
-                        sleep('')
-
-                        acao = input('')
+                    acao = input('')
 
 # FLAG: história continua aqui #4
+
+                elif acao == '2':
+                    sleep()
+                    print('')
+                    sleep('')
+
+                    acao = input('')
+
+# FLAG: história continua aqui #5
 
         elif acao == '2':
             sleep(2)
@@ -174,7 +193,7 @@ if acao == '1':
 
                 acao = input('')
 
-# FLAG: história continua aqui #5
+# FLAG: história continua aqui #6
 
             elif acao == '2':
                 sleep()
@@ -183,7 +202,7 @@ if acao == '1':
 
                 acao = input('')
 
-# FLAG: história continua aqui #6
+# FLAG: história continua aqui #7
 
 elif acao == '2':
     sleep(2)

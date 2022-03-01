@@ -78,4 +78,5 @@ if __name__ == '__main__':
     #print(luta_troll())
     #print(batalha_acylla())
     #print(confronto_hydra())
-    # print(ultima_luta())
+    #print(ultima_luta())
+    pass
