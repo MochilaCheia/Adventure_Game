@@ -1,8 +1,9 @@
 import random
 from time import sleep
 
-def player():
-    nome_player = input('Vamos começar! Qual seu nome?')
+# @FUNÇÂO EM CONSTRUÇÃO:
+#def player():
+#    nome_player = input('Vamos começar! Qual seu nome?')
 
 print('Durante a Era do Rei Arthur e seus doze Cavaleiros, monstros e criaturas ainda eram comuns no mundo,\nseres fantásticos que hoje apenas existem no imaginário das pessoas. \nE essa é história das suas aventuras, conquistas e perdas na última era dos monstros e magia.')
 sleep(6)
@@ -67,14 +68,14 @@ if acao == '1':
                 print('')
                 sleep()
 
-                acao = input('')
+                acao = input('\n')
 
             elif acao == '2':
                 sleep()
                 print('')
                 sleep()
 
-                acao = input('')
+                acao = input('\n')
 
 # FLAG: função de luta entra nessa rota da história #1
 # FLAG: história continua aqui #1
@@ -127,7 +128,7 @@ if acao == '1':
                     print('')
                     sleep()
 
-                    acao = input('')
+                    acao = input('\n')
 
 # FLAG: história continua aqui #2
 
@@ -136,7 +137,7 @@ if acao == '1':
                     print('')
                     sleep()
 
-                    acao = input('')
+                    acao = input('\n')
 
 # FLAG: história continua aqui #3
 
@@ -160,7 +161,7 @@ if acao == '1':
                     print('')
                     sleep()
 
-                    acao = input('')
+                    acao = input('\n')
 
 # FLAG: história continua aqui #4
 
@@ -169,7 +170,7 @@ if acao == '1':
                     print('')
                     sleep('')
 
-                    acao = input('')
+                    acao = input('\n')
 
 # FLAG: história continua aqui #5
 
@@ -191,7 +192,7 @@ if acao == '1':
                 print('')
                 sleep()
 
-                acao = input('')
+                acao = input('\n')
 
 # FLAG: história continua aqui #6
 
@@ -206,22 +207,45 @@ if acao == '1':
                 acao = input('\n1) Faça os lobos se aliarem a você mostrando sua determinação e sacrifício 2) Para convencer os lobos, teria que pagar um preço alto demais, você téra que sobreviver a isso sozinho')
 
                 if acao == '1':
-                    sleep()
-                    print('')
-                    sleep()
+                    sleep(2)
+                    print('A única forma deles se aliarem e oferecendo algo que vai diminuir sua fome.\nVocê não está com nenhuma comida...')
+                    sleep(2)
+                    print('Você então pega sua espada, respira fundo e serra seus dentes\nEm um único corte limpo você decepa seu braço esquerdo.')
+                    sleep(4)
+                    print('Você então joga seu braço para os lobos brancos em sinal de confiança, os lobos estranham seu gesto,\nmas aceitam e vão para o seu lado como força de respeito, você usa a boca do maior lobo para estancar o sangramento do seu braço com os dentes.')
+                    sleep(2)
+                    print('Agora é hora de virar o jogo.')
 
-                    acao = input('')
+                    acao = input('\1) Você está ferido, concentre-se na defesa e em aguentar mais um pouco 2) Avance, mesmo ferido só resta lutar agora.')
+
+                    if  acao == '1':
+                        sleep(2)
+                        print('')
+                        sleep()
+
+                        acao = input('\n')
 
 # FLAG: história continua aqui #7
 
-                elif acao == '2':
-                    sleep()
-                    print('')
-                    sleep()
+                    elif acao == '1':
+                        sleep(2)
+                        print('')
+                        sleep()
 
-                    acao = input('')
+                        acao = input('\n')
 
 # FLAG: história continua aqui #8
+
+                elif acao == '2':
+                    sleep(2)
+                    print('Preparando-se para matar a todos os lobos, um frio percorre sua espinha, sente que o que está prestes a enfrentar está muito além da força humana.')
+                    sleep(3)
+                    print('')
+
+                    acao = input('\n')
+
+# REDFLAG: final de rota previsto
+# FLAG: história continua aqui #9
 
 elif acao == '2':
     sleep(2)
