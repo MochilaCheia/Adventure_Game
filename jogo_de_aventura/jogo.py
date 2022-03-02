@@ -184,7 +184,7 @@ if acao == '1':
             print('Independentemente de quão bizarra seja essa situação, você precisa se mover,\nprecisa tomar uma atitude e logo, antes que seja tarde')
             sleep(4)
 
-            acao = input('\n1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e investe nisso')
+            acao = input('\n1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e decide investir nisso')
 
             if acao == '1':
                 sleep()
@@ -196,13 +196,32 @@ if acao == '1':
 # FLAG: história continua aqui #6
 
             elif acao == '2':
-                sleep()
-                print('')
-                sleep()
+                sleep(2)
+                print('Seu investimento deu frutos, no meio "disso" tem lobos, lobos aparentemente normais, que estão sendo enganados por seja lá o que seja isso.')
+                sleep(3)
+                print('Como são lobos, você pode fazer eles te ajudarem, só precisa convencer esses animais.')
+                sleep(3)
+                print('Essa é uma situação de vida ou morte, seu decisão será brutal...')
 
-                acao = input('')
+                acao = input('\n1) Faça os lobos se aliarem a você mostrando sua determinação e sacrifício 2) Para convencer os lobos, teria que pagar um preço alto demais, você téra que sobreviver a isso sozinho')
+
+                if acao == '1':
+                    sleep()
+                    print('')
+                    sleep()
+
+                    acao = input('')
 
 # FLAG: história continua aqui #7
+
+                elif acao == '2':
+                    sleep()
+                    print('')
+                    sleep()
+
+                    acao = input('')
+
+# FLAG: história continua aqui #8
 
 elif acao == '2':
     sleep(2)
