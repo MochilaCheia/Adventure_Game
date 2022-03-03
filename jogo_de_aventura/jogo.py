@@ -188,9 +188,10 @@ if acao == '1':
             acao = input('\n1) Você percebe que está cercado sua única escolha é fazer o que veio fazer, Caçar\n2) Dentre eles, você nota alguns lobos únicos e diferentes e decide investir nisso')
 
             if acao == '1':
-                sleep()
-                print('')
-                sleep()
+                sleep(2)
+                print('Ao respirar fundo você aguça seus sentidos e prepara seu instinto para batalha e massacre que está por vir.')
+                sleep(2)
+                print('Você começa a cortar tentaculos e decapitar os lobos escuros como a noite, ')
 
                 acao = input('\n')
 
@@ -240,12 +241,35 @@ if acao == '1':
                     sleep(2)
                     print('Preparando-se para matar a todos os lobos, um frio percorre sua espinha, sente que o que está prestes a enfrentar está muito além da força humana.')
                     sleep(3)
-                    print('')
+                    print('O sol começa a ser por e um festival de sangue é iluminado pela luz alaranjada que vem do horizonte, você cada vez mais se apróxima do centro da criatura bizarra.')
+                    sleep(4)
+                    print('Proxímo do centro da criatura você não acredita no que seus olhos estão te mostrando... aquilo é... não pode ser, por que tem uma linda mulher ali?\nEla ainda está viva? ou ela apenas é um cadaver no boca da criatura???')
+                    sleep(3)
+                    print('Não importa, agora sei que ali é o centro, tenho certeza, lá encontrarei o coração da criatura e poderei dar um fim a isso.')
+                    sleep(2)
+                    print('Ao chegar no centro você percebe que a moça não está morta???\nEla começa a falar alguma coisa...')
 
-                    acao = input('\n')
+                    acao = input('\n1) Você se aproxima para escutar o que ela tem a dizer 2) Apenas a mata, isso com certeza é uma armadilha!')
+
+                    if acao == '1':
+                        sleep(2)
+                        print('')
+                        sleep()
+
+                        acao = input('\n')
+
+# BLACKFLAG: final de rota previsto
+# FLAG: história continua aqui #9
+
+                    elif acao == '2':
+                        sleep(2)
+                        print('')
+                        sleep()
+
+                        acao = input('\n')
 
 # REDFLAG: final de rota previsto
-# FLAG: história continua aqui #9
+# FLAG: história continua aqui #10
 
 elif acao == '2':
     sleep(2)
