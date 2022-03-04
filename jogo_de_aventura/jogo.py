@@ -205,7 +205,7 @@ if acao == '1':
                 sleep(3)
                 print('Essa é uma situação de vida ou morte, seu decisão será brutal...')
 
-                acao = input('\n1) Faça os lobos se aliarem a você mostrando sua determinação e sacrifício 2) Para convencer os lobos, teria que pagar um preço alto demais, você téra que sobreviver a isso sozinho')
+                acao = input('\n1) Faça os lobos se aliarem a você mostrando sua determinação e sacrifício\n2) Para convencer os lobos, teria que pagar um preço alto demais, você téra que sobreviver a isso sozinho')
 
                 if acao == '1':
                     sleep(2)
@@ -249,17 +249,40 @@ if acao == '1':
                     sleep(2)
                     print('Ao chegar no centro você percebe que a moça não está morta???\nEla começa a falar alguma coisa...')
 
-                    acao = input('\n1) Você se aproxima para escutar o que ela tem a dizer 2) Apenas a mata, isso com certeza é uma armadilha!')
+                    acao = input('\n1) Você se aproxima para escutar o que ela tem a dizer\n2) Apenas a mata, isso com certeza é uma armadilha!')
 
                     if acao == '1':
                         sleep(2)
-                        print('')
-                        sleep()
+                        print('Ela está sussurando algo...')
+                        sleep(3)
+                        print('"- Seu destino de agora em diante será coberto de trevas e desespero, em meu último suspiro te amaldiçoo até o fim de sua vida..."')
+                        sleep(3)
+                        print('Independente do que ela tenha dito, você precisa matar ela, ir até o fim com sua decisão.')
 
-                        acao = input('\n')
+                        acao = input('\n1) Decepar a cabeça da mulher\n2) Antes de mata-lá, tentar conversar')
+
+                        if acao == '1':
+                            sleep(2)
+                            print('A cabeça da mulher ou será da criatura rola pelo chão e seu sangue deixou seu corpo e sua espada encharcados... ')
+                            sleep(3)
+                            print('Quando você olha pra sua espada percebe que ela está se dissolvendo, o sangue da criatura era um ácido extremamente letal!')
+                            sleep(3)
+                            print('Já é tarde demais pra se salvar, o sangue dela queima sua pele, seu maior arrenpedimento vai ser não ter  feito as coisas diferentes, você morrera sem se lembrar de nada.')
+                            sleep(4)
+                            print('Você morreu.')
+
+# REDFLAG: Final da terceira rota.
+
+                        elif acao == '2':
+                            sleep(2)
+                            print('')
+                            sleep()
+
+                            acao = input('\n')
+
 
 # BLACKFLAG: final de rota previsto
-# FLAG: história continua aqui #9
+# FLAG: história continua aqui #10
 
                     elif acao == '2':
                         sleep(2)
@@ -269,7 +292,7 @@ if acao == '1':
                         acao = input('\n')
 
 # REDFLAG: final de rota previsto
-# FLAG: história continua aqui #10
+# FLAG: história continua aqui #11
 
 elif acao == '2':
     sleep(2)
