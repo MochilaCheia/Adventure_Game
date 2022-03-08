@@ -1,10 +1,9 @@
 import random
+import componentes
 from time import sleep
 
-# @FUNÇÂO EM CONSTRUÇÃO:
-#def player():
-#    nome_player = input('Vamos começar! Qual seu nome?')
-
+componentes.introducao()
+sleep(3)
 print('Durante a Era do Rei Arthur e seus doze Cavaleiros, monstros e criaturas ainda eram comuns no mundo,\nseres fantásticos que hoje apenas existem no imaginário das pessoas. \nE essa é história das suas aventuras, conquistas e perdas na última era dos monstros e magia.')
 sleep(6)
 print('A sua história se inicia não exatamente no começo, mas nesse momento estranhamente diferente,\nem uma aldeia onde os ataques ocasiões de monstros  costumam frequentes mas mesmo assim costuma ser um lugar calmo e pacato,\nexceto pelo cavaleiro pelado na floresta falando sozinho, e esse é você:')
@@ -17,7 +16,13 @@ print('Enquanto continua procurando alguma coisa que te lembre algo você apenas
 sleep(6)
 print('Você está assustado, mas precisa tomar uma decisão:\n')
 
-acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide fugir para a floresta e procurar a aldeia humana mais próxima, afinal você está com medo de ser assombrado.\n\n>> Digite apenas o número 1 ou número 2 para escolher. <<\n\n')
+acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide fugir para a floresta e procurar a aldeia humana mais próxima, afinal você está com medo de ser assombrado.\n\n>> Digite apenas o número 1 ou número 2 para escolher e seguir a história ou o número 3 pra acessar seu arsenal. <<\n\n')
+
+while acao == '3':
+    sleep(1.5)
+    componentes.inventario()
+    sleep(10)
+    acao = input('>> Digite apenas o número 1 ou número 2 para escolher e seguir a história <<')
 
 if acao == '1':
     sleep(2)
@@ -41,7 +46,7 @@ if acao == '1':
         criatura, luta = random.choice(monstros)
         sleep(2)
         print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um... {}\n' .format(criatura))
-        sleep(3)
+        sleep(2)
         print('E agora, o que você fará?\n')
         sleep(3)
 
@@ -50,10 +55,10 @@ if acao == '1':
         if acao == '1':
             sleep(3)
             print('Ao atacar a criatura sem parar você quebra sua espada e fica indefeso.')
-            sleep(4)
+            sleep(3)
             print('a criatura se enfurece pelos ataques e usa suas garras para rasgar seu peito desprotegido.')
-            sleep(4)
-            print('Você morreu.')
+            sleep(3)
+            componentes.final_incompleto()
 
 # REDFLAG: Final da primeira rota.
 
@@ -268,8 +273,8 @@ if acao == '1':
                             print('Quando você olha pra sua espada percebe que ela está se dissolvendo, o sangue da criatura era um ácido extremamente letal!')
                             sleep(3)
                             print('Já é tarde demais pra se salvar, o sangue dela queima sua pele, seu maior arrenpedimento vai ser não ter  feito as coisas diferentes, você morrera sem se lembrar de nada.')
-                            sleep(4)
-                            print('Você morreu.')
+                            sleep(3)
+                            componentes.final_incompleto()
 
 # REDFLAG: Final da terceira rota.
 
@@ -300,6 +305,6 @@ elif acao == '2':
     sleep(5)
     print('você está desprotegido e deixou sua espada lá trás, você é atacado e morre lentamente com o veneno.')
     sleep(5)
-    print('Você morreu.')
+    componentes.final_incompleto()
 
 # REDFLAG: Final da segunda rota.
