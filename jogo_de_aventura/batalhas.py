@@ -4,10 +4,12 @@ from time import sleep
 def luta_troll():
     golpes = ['3', '5', '7']
     ponto_critico = '7'
+
     sleep(2)
     print('Um troll de diamante selvagem apareceu! e você precisa atacar!')
     sleep(3)
     escolha = input('Quantos golpes você vai dar?\nOpções: '+','.join(golpes))
+
     if escolha == '3':
         print('Não foi o bastante pra derrotar o troll de diamante selvagem.')
     elif escolha == '5':
@@ -20,10 +22,12 @@ def luta_troll():
 def confronto_medusa():
     corpo_medusa = ['Cabeça', 'Pescoço', 'Torso', 'Barriga', 'Braços', 'Pernas']
     golpe_final = 'Pescoço'
+
     sleep(2)
     print('Você só tem uma única chance de matar a Medusa, acertando seu ponto fraco, escolha com sabedoria aonde vai atacar.')
     sleep(3)
     ataque = input('Só poderá atacar nesses lugares, escolha um e digite para atacar: '+','.join(corpo_medusa))
+
     if ataque == 'Cabeça':
         print('A cabeça da Medusa está cheia de cobras que defendem seu ataque, te picam e o veneno te transforma em pedra.')
     elif ataque == 'Torso':
@@ -42,6 +46,7 @@ def confronto_medusa():
 def azetris():
     golpe_fatal = 10
     ataques_eu_aguento = 3
+
     while ataques_eu_aguento != 0:
         tentativa = int(
             input('Quantos golpes você acha necessário para derrotar o monstro azetris:\n~~Digite o número~~\n')
@@ -53,12 +58,12 @@ def azetris():
             print(f'Você deu o {golpe} golpe!')
 
         if tentativa < golpe_fatal:
-            print('Você não matou, e o Azetris deu um golpe em você')
+            print('Você não o matou, e o Azetris deu um golpe em você!')
             ataques_eu_aguento = ataques_eu_aguento - 1
             if ataques_eu_aguento == 0:
-                print('Cara, você não aguenta mais, e morreu!!')
+                print('Você não aguenta mais e morre!!!')
         else:
-            print('Parabéns você derrotou o Azetris!!!!')
+            print('Parabéns você conseguiu derrotar o Azetris!!!!')
             break
 
 def batalha_acylla():
@@ -86,11 +91,4 @@ def ultima_luta():
 
 
 if __name__ == '__main__':
-    #print(luta_azetris())
-    #print(confronto_medusa())
-    #print(luta_troll())
-    #print(batalha_acylla())
-    #print(confronto_hydra())
-    #print(ultima_luta())
-    print(azetris())
     pass
