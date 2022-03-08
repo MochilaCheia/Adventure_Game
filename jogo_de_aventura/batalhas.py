@@ -39,6 +39,9 @@ def confronto_medusa():
     else:
         print('Essa não uma opção, jovem espachim.')
 
+def azetris():
+    golpe_fatal = 10
+    ataques_eu_aguento = 3
     while ataques_eu_aguento != 0:
         tentativa = int(
             input('Quantos golpes você acha necessário para derrotar o monstro azetris:\n~~Digite o número~~\n')
@@ -56,16 +59,7 @@ def confronto_medusa():
                 print('Cara, você não aguenta mais, e morreu!!')
         else:
             print('Parabéns você derrotou o Azetris!!!!')
-=======
-    tentativa = int(input('Quantos golpes você acha necessário para derrotar o monstro azetris:\n~~Digite o número~~\n'))
-    golpes_necessarios = [2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-    for busca in golpes_necessarios:
-        if tentativa >= 18:
-            print('Você acertou ele: {} vezes' .format(busca))
->>>>>>> main
             break
-
-
 
 def batalha_acylla():
     pass
@@ -98,4 +92,5 @@ if __name__ == '__main__':
     #print(batalha_acylla())
     #print(confronto_hydra())
     #print(ultima_luta())
+    print(azetris())
     pass
