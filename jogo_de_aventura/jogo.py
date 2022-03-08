@@ -2,11 +2,8 @@ import random
 import componentes
 from time import sleep
 
-# @FUNÇÂO EM CONSTRUÇÃO:
-#def player():
-#    nome_player = input('Vamos começar! Qual seu nome?')
-
 componentes.introducao()
+sleep(3)
 print('Durante a Era do Rei Arthur e seus doze Cavaleiros, monstros e criaturas ainda eram comuns no mundo,\nseres fantásticos que hoje apenas existem no imaginário das pessoas. \nE essa é história das suas aventuras, conquistas e perdas na última era dos monstros e magia.')
 sleep(6)
 print('A sua história se inicia não exatamente no começo, mas nesse momento estranhamente diferente,\nem uma aldeia onde os ataques ocasiões de monstros  costumam frequentes mas mesmo assim costuma ser um lugar calmo e pacato,\nexceto pelo cavaleiro pelado na floresta falando sozinho, e esse é você:')
@@ -19,7 +16,13 @@ print('Enquanto continua procurando alguma coisa que te lembre algo você apenas
 sleep(6)
 print('Você está assustado, mas precisa tomar uma decisão:\n')
 
-acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide fugir para a floresta e procurar a aldeia humana mais próxima, afinal você está com medo de ser assombrado.\n\n>> Digite apenas o número 1 ou número 2 para escolher. <<\n\n')
+acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide fugir para a floresta e procurar a aldeia humana mais próxima, afinal você está com medo de ser assombrado.\n\n>> Digite apenas o número 1 ou número 2 para escolher e seguir a história ou o número 3 pra acessar seu arsenal. <<\n\n')
+
+while acao == '3':
+    sleep(1.5)
+    componentes.inventario()
+    sleep(10)
+    acao = input('>> Digite apenas o número 1 ou número 2 para escolher e seguir a história <<')
 
 if acao == '1':
     sleep(2)

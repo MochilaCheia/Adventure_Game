@@ -7,7 +7,6 @@ def luta_troll():
     sleep(2)
     print('Um troll de diamante selvagem apareceu! e você precisa atacar!')
     sleep(3)
-    #while
     escolha = input('Quantos golpes você vai dar?\nOpções: '+','.join(golpes))
     if escolha == '3':
         print('Não foi o bastante pra derrotar o troll de diamante selvagem.')
@@ -42,7 +41,7 @@ def confronto_medusa():
 
 def luta_azetris():
     tentativa = int(input('Quantos golpes você acha necessário para derrotar o monstro azetris:\n~~Digite o número~~\n'))
-    golpes_necessarios = [2, 3, 4, 5, 6, 8, 9, 10 , 11, 12, 13, 14, 15, 16, 17, 18]
+    golpes_necessarios = [2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
     for busca in golpes_necessarios:
         if tentativa >= 18:
             print('Você acertou ele: {} vezes' .format(busca))
