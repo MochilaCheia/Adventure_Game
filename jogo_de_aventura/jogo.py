@@ -3,6 +3,8 @@ import componentes
 from time import sleep
 
 componentes.introducao()
+componentes.nome_jogador()
+
 sleep(3)
 print('Durante a Era do Rei Arthur e seus doze Cavaleiros, monstros e criaturas ainda eram comuns no mundo,\nseres fantásticos que hoje apenas existem no imaginário das pessoas. \nE essa é história das suas aventuras, conquistas e perdas na última era dos monstros e magia.')
 sleep(6)
