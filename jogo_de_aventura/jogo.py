@@ -233,6 +233,7 @@ if acao == '1':
 
                         acao = input('\n')
 
+# GOLDFLAG: final de rota previsto
 # FLAG: história continua aqui #7
 
                     elif acao == '1':
@@ -292,14 +293,24 @@ if acao == '1':
 # FLAG: história continua aqui #10
 
                     elif acao == '2':
+                        sleep(3)
+                        print('Ao mata-lá você nunca saberá o que ela estava dizendo com certeza.\nApenas imagina que seja lá o que fosse, seria cobertor de ódio, desprezo e amargor, com certeza')
+                        sleep(3)
+                        print('Você aprendeu e sente que fez o certo, que sangue e morte são sua única escolha, você sobriviveu aqui e agora')
                         sleep(2)
-                        print('')
-                        sleep()
+                        print('Seu passado e suas mémorias já não importam mais, você vai seguir em frente e trilhar seu próprio caminho.')
+                        sleep(2)
+                        print('Você abandona o fantasma na floresta e parte para o continente para conquistar terras, saquear e se fazer rei a qualquer custo...')
+                        sleep(3)
+                        print('Suas escolhas até aqui o tornaram o Rei Tirano...')
+                        sleep(3)
+                        print('Seu reinado de caos e dor durou sua vida inteira...')
+                        sleep(4)
+                        print('Final ruim...')
+                        print('E depois de dezenas de anos finalmente...')
+                        componentes.final_incompleto()
 
-                        acao = input('\n')
-
-# REDFLAG: final de rota previsto
-# FLAG: história continua aqui #11
+# BLACKFLAG: final da quarta rota
 
 elif acao == '2':
     sleep(2)
