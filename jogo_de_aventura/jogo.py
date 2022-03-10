@@ -1,9 +1,15 @@
 import random
 import componentes
+import inventario
 from time import sleep
 
+
 componentes.introducao()
-componentes.nome_jogador()
+
+sleep(0.5)
+nome_player = input('\nMas antes de começarmos, me diga seu nome jovem héroi: ')
+sleep(1)
+print(f'Seja bem vindo, {nome_player}! e boa aventura!\n')
 
 sleep(3)
 print('Durante a Era do Rei Arthur e seus doze Cavaleiros, monstros e criaturas ainda eram comuns no mundo,\nseres fantásticos que hoje apenas existem no imaginário das pessoas. \nE essa é história das suas aventuras, conquistas e perdas na última era dos monstros e magia.')
@@ -21,9 +27,9 @@ print('Você está assustado, mas precisa tomar uma decisão:\n')
 acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide fugir para a floresta e procurar a aldeia humana mais próxima, afinal você está com medo de ser assombrado.\n\n>> Digite apenas o número 1 ou número 2 para escolher e seguir a história ou o número 3 pra acessar seu arsenal. <<\n\n')
 
 while acao == '3':
-    sleep(1.5)
-    componentes.inventario()
-    sleep(10)
+    sleep(1)
+    inventario.inventario_ato1()
+    sleep(3)
     acao = input('>> Digite apenas o número 1 ou número 2 para escolher e seguir a história <<')
 
 if acao == '1':
@@ -60,7 +66,7 @@ if acao == '1':
             sleep(3)
             print('a criatura se enfurece pelos ataques e usa suas garras para rasgar seu peito desprotegido.')
             sleep(3)
-            componentes.final_incompleto()
+            componentes.final_incompleto(nome_player)
 
 # REDFLAG: Final da primeira rota.
 
@@ -277,7 +283,7 @@ if acao == '1':
                             sleep(3)
                             print('Já é tarde demais pra se salvar, o sangue dela queima sua pele, seu maior arrenpedimento vai ser não ter  feito as coisas diferentes, você morrera sem se lembrar de nada.')
                             sleep(3)
-                            componentes.final_incompleto()
+                            componentes.final_incompleto(nome_player)
 
 # REDFLAG: Final da terceira rota.
 
@@ -308,7 +314,7 @@ if acao == '1':
                         sleep(4)
                         print('Final ruim...')
                         print('E depois de dezenas de anos finalmente...')
-                        componentes.final_incompleto()
+                        componentes.final_incompleto(nome_player)
 
 # BLACKFLAG: final da quarta rota
 
@@ -318,6 +324,6 @@ elif acao == '2':
     sleep(5)
     print('você está desprotegido e deixou sua espada lá trás, você é atacado e morre lentamente com o veneno.')
     sleep(5)
-    componentes.final_incompleto()
+    componentes.final_incompleto(nome_player)
 
 # REDFLAG: Final da segunda rota.
