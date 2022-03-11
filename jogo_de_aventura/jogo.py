@@ -28,7 +28,7 @@ acao = input('1) se acalma e pergunta pro mago tudo que quer saber.\n2) decide f
 
 while acao == '3':
     sleep(1)
-    inventario.inventario_ato1()
+    inventario.inventario_adicionar_padrao()
     sleep(3)
     acao = input('>> Digite apenas o número 1 ou número 2 para escolher e seguir a história <<')
 
@@ -289,29 +289,55 @@ if acao == '1':
 
                         elif acao == '2':
                             sleep(2)
-                            print('')
-                            sleep()
+                            print('Ela está falando algo muito baixo...')
+                            sleep(2)
+                            print('Você se aproxima lentamente, com cautela, qualquer movimento errado pode significar sua morte.')
+                            sleep(2)
+                            print('Finalmente você é capaz de ouvir os lamentos da pobre criatura em seus últimos suspiros')
+                            sleep(3)
+                            print('\n"- Você tomou a decisão correta, e a partir de agora colherá os frutos de sua coragem, eu te aprovo, meu caro principe".\n')
+                            sleep(2)
+                            print('\n"- Que as trevas te acompanhem, que os ventos do norte te guiem e que meus irmãos')
+                            sleep(1)
+                            print('e irmãs de sangue sejam seu súditos fieis e te ajudem a erguer o tão esperado reinado dos monstros."\n')
+                            sleep(2)
+                            print('Ao terminar de falar, ela cita seu próprio nome... Acylla... uma forma de maldição antiga e aprisionamento de sua alma.')
+                            sleep(2)
+                            print('Enquanto você viver, de hoje em diante só lhe restará mal em seu caminho.')
+                            sleep(1)
+                            print('Seu destino então foi selado...')
+                            sleep(2)
+                            print('Desde então inúmeros monstros juraram lealdade a sua linhagem, com o passar do tempo o número só aumentava.')
+                            sleep(2)
+                            print('Uma horda de monstros ao seu redor foi dominando os territórios, foram se procriando e aumentando seu reino de destruição.')
+                            sleep(3)
+                            print('Você nunca quis aquilo, mas não pode fazer nada a respeito, sua própria vontade estava selada na maldiçao feita com a alma e nome de Acylla.')
+                            sleep(2)
+                            print('Com mais tempo o mundo conheceu sua pior época, o reinado dos monstros pelo continente, liderados por você, o rei dêmonio.')
+                            sleep(2)
+                            print('Até mesmo após sua morte seu reinado continuaria com sua linhagem, sua vida foi prolongada pelos monstros...')
+                            sleep(2)
+                            print('Mas finalmente após milhares de anos... ')
+                            componentes.final_incompleto(nome_player)
 
-                            acao = input('\n')
-
-
-# BLACKFLAG: final de rota previsto
-# FLAG: história continua aqui #10
+# BLACKFLAG: final da quinta rota
 
                     elif acao == '2':
                         sleep(3)
-                        print('Ao mata-lá você nunca saberá o que ela estava dizendo com certeza.\nApenas imagina que seja lá o que fosse, seria cobertor de ódio, desprezo e amargor, com certeza')
-                        sleep(3)
+                        print('Ao mata-lá você nunca saberá o que ela estava dizendo com certeza.')
+                        sleep(2)
+                        print('Apenas imagina que seja lá o que fosse, seria cobertor de ódio, desprezo e amargor, com certeza')
+                        sleep(2)
                         print('Você aprendeu e sente que fez o certo, que sangue e morte são sua única escolha, você sobriviveu aqui e agora')
                         sleep(2)
                         print('Seu passado e suas mémorias já não importam mais, você vai seguir em frente e trilhar seu próprio caminho.')
                         sleep(2)
                         print('Você abandona o fantasma na floresta e parte para o continente para conquistar terras, saquear e se fazer rei a qualquer custo...')
-                        sleep(3)
+                        sleep(1)
                         print('Suas escolhas até aqui o tornaram o Rei Tirano...')
-                        sleep(3)
+                        sleep(2)
                         print('Seu reinado de caos e dor durou sua vida inteira...')
-                        sleep(4)
+                        sleep(3)
                         print('Final ruim...')
                         print('E depois de dezenas de anos finalmente...')
                         componentes.final_incompleto(nome_player)
@@ -320,10 +346,12 @@ if acao == '1':
 
 elif acao == '2':
     sleep(2)
-    print('Enquanto corre pela floresta você tropeça e caí em um ninho de cobras-trovão.\n(elas são conhecidas pelos apitos na ponta da calda que ao balançar emite o som de um trovão.')
-    sleep(5)
+    print('Enquanto corre pela floresta você tropeça e caí em um ninho de cobras-trovão.')
+    sleep(2)
+    print('elas são conhecidas pelos apitos na ponta da calda que ao balançar emite o som de um trovão.')
+    sleep(2)
     print('você está desprotegido e deixou sua espada lá trás, você é atacado e morre lentamente com o veneno.')
-    sleep(5)
+    sleep(2)
     componentes.final_incompleto(nome_player)
 
 # REDFLAG: Final da segunda rota.
