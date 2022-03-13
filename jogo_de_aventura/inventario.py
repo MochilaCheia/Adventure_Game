@@ -8,8 +8,9 @@ def inventario_adicionar_padrao():
     print(f'Seu inventário está {inventario_inicial[0]}.')
 
     escolha = input('Deseja adicionar a Espada flamejante ancestral ao seu inventário?\n')
+    escolha_tratada = escolha.title()
 
-    if escolha == 'Sim':
+    if escolha_tratada == 'Sim':
 
         inventario_inicial.pop()
         inventario_inicial.append('Espada flamejante ancestral')
@@ -17,8 +18,9 @@ def inventario_adicionar_padrao():
 
         sleep(1)
         pergunta = input('Deseja ver seu inventário?\n')
+        pergunta_tratada = pergunta.title()
 
-        if pergunta == 'Sim':
+        if pergunta_tratada == 'Sim':
             print(f'No seu inventário tem: {inventario_inicial[0]}.')
 
         else:
@@ -36,8 +38,9 @@ def inventario_adicionar():
 
     sleep(1)
     escolha = input('Deseja adicionar um item ao seu inventário?\n')
+    escolha_tratada = escolha.title()
 
-    if escolha == 'Sim':
+    if escolha_tratada == 'Sim':
 
         inventario_adicionar.pop()
         sleep(1)
@@ -47,8 +50,9 @@ def inventario_adicionar():
         print(f'A {adicao} foi adicionado ao seu inventário.')
         sleep(1)
         pergunta = input('Deseja ver seu inventário?\n')
+        pergunta_tratada = pergunta.title()
 
-        if pergunta == 'Sim':
+        if pergunta_tratada == 'Sim':
             print(f'No seu inventário tem: {inventario_adicionar[0]}.')
 
         else:
