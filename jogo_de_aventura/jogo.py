@@ -182,7 +182,7 @@ if acao == '1':
             elif acao == '2':
                 sleep(tempo)
                 print('\n"- Eu não sei a causa que te fez perder suas mémorias, menino Arthur.')
-                slee(tempo)
+                sleep(tempo)
                 print('Pórem temo que só vá consegui-las novamente após achar a causa por de trás disso."')
                 sleep(tempo)
                 print('\n"- Por onde eu deveria começar se não me lembro de nada?"')
@@ -267,7 +267,7 @@ if acao == '1':
                     sleep(tempo)
                     print('Você então joga seu braço para os lobos brancos em sinal de confiança, os lobos estranham seu gesto,')
                     sleep(tempo)
-                    print('mas aceitam e vão para o seu lado como força de respeito, você usa a boca do maior lobo para estancar o sangramento do seu braço com os dentes.')
+                    print('mas aceitam e vão para o seu lado como forma de respeito, você usa a boca do maior lobo para estancar o sangramento do seu braço com os dentes.')
                     sleep(tempo)
                     print('Agora é hora de virar o jogo.')
 
@@ -285,12 +285,43 @@ if acao == '1':
 
                     elif acao == '1':
                         sleep(tempo)
-                        print('')
+                        print('Talvez seja pela perda de sangue, talvez seja pela adrenalina ou talvez apenas seja por medo de morrer.')
                         sleep(tempo)
+                        print('Você monta em um lobo branco, seu sangramento parou mas continua internamente.')
+                        sleep(tempo)
+                        print('O lobo alfa branco se tinge de carmesim com seu sangue.')
+                        sleep(tempo)
+                        print('Sua visão está ficando embaçada... você estar perdendo a consciência.')
+                        sleep(tempo)
+                        print('Com suas últimas forças, você avança, uge de dor e fúria e com a alcatéia de lobos brancos,')
+                        sleep(tempo)
+                        print('Você vai em direção a morte!')
+                        sleep(tempo)
+                        print('Tentáculos, sangue, presas e garras voam pra todo lado, só tem morte ao redor.')
+                        sleep(tempo)
+                        print('Os lobos não se afugentam, não existe medo alí, o fim se aproxima, você deve escolher como prefere morrer.')
 
-                        acao = input('\n')
+                        acao = input('1) Continue sem parar, lute! mate a criatura e morra em glória.\n2) Mate a criatura e tente salvar o maior número de lobos que puder.')
 
+                        if acao == '1':
+                            sleep(tempo)
+                            print('')
+                            sleep(tempo)
+
+                            acao = input('\n')
+
+# REDFLAG: final da rota previsto
 # FLAG: história continua aqui #8
+
+                        elif acao == '2':
+                            sleep(tempo)
+                            print('')
+                            sleep(tempo)
+
+                            acao = input('\n')
+
+# REDFLAG: final da rota previsto
+# FLAG: história continua aqui #9
 
                 elif acao == '2':
                     sleep(tempo)
