@@ -1,6 +1,7 @@
 from time import sleep
-
 # FLAG: componentes de estrutura de história
+
+
 
 def introducao(tempo):
     sleep(tempo)
@@ -34,8 +35,15 @@ def final_conclusao(nome_player,tempo):
 
 def final_encerramento(tempo):
     sleep(tempo)
-    print('Uma realização de Paulo Vieira\nEm parceria com Silmara Silva\n Com o apoio, ensino e paciência de Matheus Bortoletto.')
-    print('Agradecimentos especiais a: ... ')
+    print('Uma realização de Paulo Vinicius\n')
+    print('Em parceria com Silmara Silva, uma colega extraordinaria')
+    print('Com o apoio, ensino e paciência de Matheus Bortoletto, que tem toda minha gratidão e admiração, meu grande mestre.')
+    print('Agradecimentos especiais a: \n')
+    print('Minha familia e amigos')
+    print('Minha mãe, por absolutamente tudo!')
+    print('Danilo, meu grande amigo que sempre me apoiou.')
+    print('Stephanie, por todo amor e nunca me deixar desistir.')
+    print('um agradecimento a namorada do Matheus, por ceder ele e ser legal.')
 
 if __name__ == '__main__':
     pass
