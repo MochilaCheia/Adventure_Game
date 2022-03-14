@@ -305,23 +305,47 @@ if acao == '1':
 
                         if acao == '1':
                             sleep(tempo)
-                            print('')
+                            print('Resta pouco da criatura agora, apenas a parte mulher com alguns tentáculos em pedaços e lobos pretos morrendo.')
                             sleep(tempo)
+                            print('Ela está sem forças, então você usa um cadáver de lobo como escudo enquanto avança.')
+                            sleep(tempo)
+                            print('Você finalmente chega no centro da criatura, dá de encontro com a morte certa dela e sua e por fim...')
+                            sleep(tempo)
+                            print('Você apunha-lá seu coração verde e gosmento, sua espada e suas mãos começam a derreter.')
+                            sleep(tempo)
+                            print('O sangue corrosivo da criatura está te queimando, mas você não se importa, você a matou, finalmente a matou.')
+                            sleep(tempo)
+                            print('Em seus últimos momentos, valquírias vem do céu pra proclamar sua vitória e receber sua alma em vahala.')
+                            sleep(tempo)
+                            print('Sua te deu o direito, agora você poderá passar a eternidade lutando e conquistando em nome de Odin.')
+                            sleep(tempo)
+                            print('por fim, você dá seu último suspiro e se vai sorrindo.')
+                            sleep(tempo)
+                            componentes.final_incompleto(nome_player, tempo)
 
-                            acao = input('\n')
-
-# REDFLAG: final da rota previsto
-# FLAG: história continua aqui #8
+# REDFLAG: final da sexta rota
 
                         elif acao == '2':
                             sleep(tempo)
-                            print('')
+                            print('Que decisão louvável! você não irá se arrepender dessa decisão!')
                             sleep(tempo)
+                            print('Você grita para os lobos retrocederem e avança sozinho contra a criatura.')
+                            sleep(tempo)
+                            print('Não lhe resta muita força, mas você ainda tem o suficiente para mata-lá.')
+                            sleep(tempo)
+                            print('Você não teme a morte, com toda a força e determinação que tem empunha sua espada e decapita a criatura em forma de mulher.')
+                            sleep(tempo)
+                            print('Você conseguiu! a matou!')
+                            sleep(tempo)
+                            print('Sem arrenpedimentos, você cai no chão de costas e olha pro céu, os lobos comovidos te carregam pra cima da colina.')
+                            sleep(tempo)
+                            print('Seus uivos de dor e tristeza quebram o silêncio da noite.')
+                            sleep(tempo)
+                            print('Os deuses se emocionam com sua luta e antes de morrer te concedem o título máximo de matador de monstros! sua história nuca será esquecida, sua lenda será eterna.')
+                            sleep(tempo)
+                            componentes.final_incompleto(nome_player, tempo)
 
-                            acao = input('\n')
-
-# REDFLAG: final da rota previsto
-# FLAG: história continua aqui #9
+# REDFLAG: final da sétima rota
 
                 elif acao == '2':
                     sleep(tempo)
