@@ -1,8 +1,6 @@
 from time import sleep
 # FLAG: componentes de estrutura de história
 
-
-
 def introducao(tempo):
     sleep(tempo)
     print('Olá, esse é o Adventure Game!')
@@ -17,9 +15,9 @@ def final_incompleto(nome_player,tempo):
     sleep(tempo)
     print('Você morreu.')
     sleep(tempo)
-    print(f'Mas não desânime herói {nome_player}! continue tentando e tenho certeza que chegara a um final glorioso!')
+    print(f'Mas não desânime meu caro herói {nome_player}! continue tentando e tenho certeza que chegará a um final glorioso!')
     sleep(tempo)
-    print('Surpresas te aguardam e muitas aventuras precisam ser vividas.')
+    print('Surpresas te aguardam e muitas aventuras precisam ser vividas, todas as histórias tem algo de único pra você!.')
     sleep(tempo)
     print('Continue sua jornada gloriosa!!!')
     sleep(tempo)
@@ -27,7 +25,7 @@ def final_incompleto(nome_player,tempo):
 
 def final_conclusao(nome_player,tempo):
     sleep(tempo)
-    print(f'Parabéns herói {nome_player}! Você finalizou o jogo, chegando em um dos finais da história,')
+    print(f'Parabéns herói {nome_player}! Você finalizou o jogo, chegando em um dos finais gloriosos da história,')
     sleep(tempo)
     print('você passou por inúmeros desafios e ganhou muita experiência e só precisou de N.horas.')
     sleep(tempo)
