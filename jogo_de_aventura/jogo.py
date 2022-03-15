@@ -170,7 +170,7 @@ if acao == '1':
 
 # FLAG: história continua aqui #2
 
-                elif acao == '1':
+                elif acao == '2':
                     sleep(tempo)
                     print('')
                     sleep(tempo)
@@ -239,11 +239,34 @@ if acao == '1':
                 sleep(tempo)
                 print('Ao respirar fundo você aguça seus sentidos e prepara seu instinto para batalha e massacre que está por vir.')
                 sleep(tempo)
-                print('Você começa a cortar tentaculos e decapitar os lobos escuros como a noite, ')
+                print('Você começa a cortar tentáculos e decapitar os lobos que são engolidos pela noite escura, sua espada coberta de sangue se afia nos ossos da criatura.')
+                sleep(tempo)
+                print('"- QUEM É VOCÊ, CRIATURA NEFASTA! O QUE QUER COMIGO AFINAL!", você grita.')
+                sleep(tempo)
+                print('Zero respostas, você não obtém nada além de silêncio e ataques.')
+                sleep(tempo)
+                print('(Isso não te deixa com raiva?)')
+                sleep(tempo)
 
-                acao = input('\n')
+                acao = input('1) Transforme sua raiva em força e ataque!\n2) Você busca respostas e deve obte-lás')
+
+                if acao == '1':
+                    sleep(tempo)
+                    print('')
+                    sleep(tempo)
+
+                    acao = input('\n')
 
 # FLAG: história continua aqui #6
+
+                elif acao == '2':
+                    sleep(tempo)
+                    print('')
+                    sleep(tempo)
+
+                    acao = input('\n')
+
+# FLAG: história continua aqui #7
 
             elif acao == '2':
                 sleep(tempo)
@@ -273,7 +296,7 @@ if acao == '1':
 
                     acao = input('\1) Você está ferido, concentre-se na defesa e em aguentar mais um pouco.\n2) Avance, mesmo ferido só resta lutar agora.\n')
 
-                    if  acao == '1':
+                    if acao == '1':
                         sleep(tempo)
                         print('')
                         sleep(tempo)
@@ -281,7 +304,7 @@ if acao == '1':
                         acao = input('\n')
 
 # GOLDFLAG: final de rota previsto
-# FLAG: história continua aqui #7
+# FLAG: história continua aqui #8
 
                     elif acao == '1':
                         sleep(tempo)
