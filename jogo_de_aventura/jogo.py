@@ -196,7 +196,7 @@ if acao == '1':
                 print('e quanto mais próxima dela mais criaturas poderosas e versáteis habitam.')
                 sleep(tempo)
 
-                acao = input('Você deve decidir:\n1) Seguir direto até a caverna, o mais rápido que puder e se preparar para enfrentar todo tipo de criatura existente 2) Planejar e mapear a floresta, perder dias estudando o local e anotar tudo para os próximos que vierem até aqui.')
+                acao = input('Você deve decidir:\n1) Seguir direto até a caverna, o mais rápido que puder e se preparar para enfrentar todo tipo de criatura existente\n2) Planejar e mapear a floresta, perder dias estudando o local e anotar tudo para os próximos que vierem até aqui.')
 
                 if acao == '1':
                     sleep(tempo)
@@ -209,7 +209,7 @@ if acao == '1':
 
                 elif acao == '2':
                     sleep(tempo)
-                    print('')
+                    print('Então você deverá escrever e anotar seus pensamentos e observações em um diário, sinta-se livre pra criar da melhor forma que achar.')
                     sleep(tempo)
 
                     acao = input('\n')
