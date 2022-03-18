@@ -62,5 +62,8 @@ def inventario_adicionar():
     else:
         print(f'Seu inventário continuara {inventario_adicionar[0]}.')
 
+def diario():
+    pass
+
 if __name__ == '__main__':
     pass
