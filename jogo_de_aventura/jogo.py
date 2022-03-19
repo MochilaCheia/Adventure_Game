@@ -211,6 +211,7 @@ if acao == '1':
                     sleep(tempo)
                     print('Então você deverá escrever e anotar seus pensamentos e observações em um diário, sinta-se livre pra criar da melhor forma que achar.')
                     sleep(tempo)
+                    inventario.diario()
 
                     acao = input('\n')
 
