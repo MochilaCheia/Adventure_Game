@@ -249,16 +249,29 @@ if acao == '1':
                 print('(Isso não te deixa com raiva?)')
                 sleep(tempo)
 
-                acao = input('1) Transforme sua raiva em força e ataque!\n2) Você busca respostas e deve obte-lás')
+                acao = input('1) Transforme sua raiva em força e ataque!\n2) Você busca respostas e deve obte-lás\n')
 
                 if acao == '1':
                     sleep(tempo)
-                    print('')
+                    print('Sua raiva não se justifica, ela te queima por dentro e te cega, ela te dará o resultado que busca...')
                     sleep(tempo)
+                    print('A qualquer preço...')
+                    sleep(tempo)
+                    print('O ódio faz seu sangue ferver, sua única vontade é matar aquilo que te ataca e se mostrar superior')
+                    sleep(tempo)
+                    print('--VOCÊ VIRA UM GUERREIRO BERSERKER--')
+                    sleep(tempo)
+                    print('Seus ossos estralam, seus músculos contraem e seus urros te dão presença')
+                    sleep(tempo)
+                    print('Animais que escutam tremem de pavor com o som de algo que está preparado pra morrer atacando')
+                    sleep(tempo)
+                    print('Incansavelmente você luta, você corta com sua espada, você dilacera com suas mãos e dentes')
+                    sleep(tempo)
+                    print('Você não liga pra sua vida, apenas para a morte daquilo, você alcança seu objetivo...')
+                    sleep(tempo)
+                    componentes.final_incompleto(nome_player, tempo)
 
-                    acao = input('\n')
-
-# FLAG: história continua aqui #6
+# REDFLAG: final da sétima rota
 
                 elif acao == '2':
                     sleep(tempo)
