@@ -2,6 +2,7 @@ from time import sleep
 
 # FLAG: componentes do inventario
 
+
 def inventario_adicionar_padrao():
     print('Você acessou seu inventário.')
     inventario_inicial = ['Vazio']
@@ -29,12 +30,13 @@ def inventario_adicionar_padrao():
     else:
         print(f'Seu inventário continuara {inventario_inicial[0]}.')
 
+
 def inventario_adicionar():
     sleep(1)
     print('Você acessou seu inventário.')
-    inventario_adicionar = ['Vazio']
+    adicionar = ['Vazio']
     sleep(1)
-    print(f'Seu inventário está {inventario_adicionar[0]}.')
+    print(f'Seu inventário está {adicionar[0]}.')
 
     sleep(1)
     escolha = input('Deseja adicionar um item ao seu inventário?\n')
@@ -42,10 +44,10 @@ def inventario_adicionar():
 
     if escolha_tratada == 'sim':
 
-        inventario_adicionar.pop()
+        adicionar.pop()
         sleep(1)
         adicao = input('Digite o item que deseja adicionar ao seu inventario:\n')
-        inventario_adicionar.append(adicao)
+        adicionar.append(adicao)
         adicao_limpa = adicao.strip()
         sleep(1)
         print(f'A {adicao_limpa} foi adicionado ao seu inventário.')
@@ -54,16 +56,18 @@ def inventario_adicionar():
         pergunta_tratada = pergunta.lower().strip()
 
         if pergunta_tratada == 'sim':
-            print(f'No seu inventário tem: {inventario_adicionar[0]}.')
+            print(f'No seu inventário tem: {adicionar[0]}.')
 
         else:
             print('Fechando inventário.')
 
     else:
-        print(f'Seu inventário continuara {inventario_adicionar[0]}.')
+        print(f'Seu inventário continuara {adicionar[0]}.')
+
 
 def diario():
     pass
 
+
 if __name__ == '__main__':
-    pass
+    diario()

@@ -15,7 +15,8 @@ def luta_troll():
     elif escolha == '5':
         print('Faltou tão pouco pra derrotar ele.')
     elif escolha == ponto_critico:
-        print('Você acertou no ponto fraco da armadura de cristais e finalmente derrotou ele.\nParabéns jovem espachim! você se saiu vitorioso!')
+        print('Você acertou no ponto fraco da armadura de cristais e finalmente derrotou ele.'
+              '\nParabéns jovem espachim! você se saiu vitorioso!')
     else:
         print('Essa não é uma opção, jovem guerreiro.')
 
@@ -24,12 +25,14 @@ def confronto_medusa():
     golpe_final = 'Pescoço'
 
     sleep(2)
-    print('Você só tem uma única chance de matar a Medusa, acertando seu ponto fraco, escolha com sabedoria aonde vai atacar.')
+    print('Você só tem uma única chance de matar a Medusa, '
+          'acertando seu ponto fraco, escolha com sabedoria aonde vai atacar.')
     sleep(3)
     ataque = input('Só poderá atacar nesses lugares, escolha um e digite para atacar: '+','.join(corpo_medusa))
 
     if ataque == 'Cabeça':
-        print('A cabeça da Medusa está cheia de cobras que defendem seu ataque, te picam e o veneno te transforma em pedra.')
+        print('A cabeça da Medusa está cheia de cobras que defendem seu ataque, '
+              'te picam e o veneno te transforma em pedra.')
     elif ataque == 'Torso':
         print('O torso dela é duro demais, sua espada não consegue atravessar.')
     elif ataque == 'Barriga':
@@ -39,7 +42,9 @@ def confronto_medusa():
     elif ataque == 'Pernas':
         print('Suas pernas decepatadas viram uma longa calda de cobra')
     elif ataque == golpe_final:
-        print('Você venceu, ímbátivel guerreiro e ganhou o título de matador de maldiçôes.\nAcertou seu ponto fraco e com seu pescoço cortado você ainda pode transformas sua cabeça em um escudo.\n')
+        print('Você venceu, ímbátivel guerreiro e ganhou o título de matador de maldiçôes.\n'
+              'Acertou seu ponto fraco e com seu pescoço cortado você ainda '
+              'pode transformas sua cabeça em um escudo.\n')
     else:
         print('Essa não uma opção, jovem espachim.')
 
@@ -66,8 +71,6 @@ def azetris():
             print('Parabéns você conseguiu derrotar o Azetris!!!!')
             break
 
-def batalha_acylla():
-    pass
 
 def confronto_hydra():
     desvios = ['Esquerda', 'Direita', 'Meio', 'Cima', 'Baixo']
@@ -79,6 +82,7 @@ def confronto_hydra():
             print('Você acertou!')
             nova_chance = input('continuar?')
 
+
 def ultima_luta():
     protagonista = 100
     antagonista = 100
@@ -86,8 +90,8 @@ def ultima_luta():
     golpe_machado = -15
     soco = -5
     chute = -10
-    cabeçada = -3
-    #if, while ou for?
+    cabecada = -3
+    # if, while ou for?
 
 
 if __name__ == '__main__':
