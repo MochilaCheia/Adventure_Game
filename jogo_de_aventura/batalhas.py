@@ -2,11 +2,6 @@ import random
 from time import sleep
 
 
-def conquista(nome_player, tempo, luta):
-    sleep(tempo)
-    print('Parabéns{}!!! {} se tornou seu familiar!'.format(nome_player, luta))
-
-
 def luta_troll():
     golpes = ['3', '5', '7']
     ponto_critico = '7'
@@ -83,7 +78,8 @@ def azetris():
 def confronto_hydra():
     desvios = ['Esquerda', 'Direita', 'Meio', 'Cima', 'Baixo']
     ataque = input('Adivinha:')
-    while ataque != 'Desisto':
+    nova_chance = 1
+    while nova_chance != 'Desisto':
         regenerando_direcao = random.choice(desvios)
         if ataque == regenerando_direcao:
             print(regenerando_direcao)
@@ -99,6 +95,7 @@ def ultima_luta():
     soco = -5
     chute = -10
     cabecada = -3
+    print(protagonista, antagonista, golpe_machado, golpe_espada, soco, cabecada, chute)
     # if, while ou for?
 
 

@@ -23,7 +23,7 @@ def continuara(nome_player, tempo):
     print(' Você já é um grande héroi {}!!!'.format(nome_player))
 
 
-def final_incompleto(nome_player,tempo):
+def final_incompleto(nome_player, tempo):
     sleep(tempo)
     print('Você morreu.')
     sleep(tempo)
@@ -38,7 +38,7 @@ def final_incompleto(nome_player,tempo):
     print('Vejo você logo!')
 
 
-def final_conclusao(nome_player,tempo):
+def final_conclusao(nome_player, tempo):
     sleep(tempo)
     print(f'Parabéns herói {nome_player}! Você finalizou o jogo, chegando em um dos finais gloriosos da história,')
     sleep(tempo)

@@ -1,13 +1,14 @@
 import random
 import componentes
-import batalhas
 import inventario
 from time import sleep
+
 
 tempo = int(input('Quantos segundos você gostaria até cada frase aparecer?\n'
                   'Digite apenas o número e lembre-se, as frases não são muito longas\n'))
 
 componentes.introducao(tempo)
+
 
 sleep(tempo)
 nome_player = input('\nMe diga seu nome jovem héroi: ')
@@ -75,8 +76,6 @@ if acao == '1':
     acao = input('Você:\n1) Levanta e vai a procura de comida, abrigo e roupas para se vestir.\n'
                  '2) Se irrita com o mago e tenta bater nele com alguma coisa perto de você.\n\n')
 
-# FlAG: parte em construção e desenvolvimento
-
     if acao == '1':
         monstros = ['Troll de diamante', 'Dragão tornado', 'Tamandúa vampiro']
         luta = random.choice(monstros)
@@ -115,7 +114,8 @@ if acao == '1':
             print(' Você leva uma golpe no processo, a dor que a criatura sente faz ela te atacar')
             sleep(tempo)
             print(' Mas você consegue salvá-la no final')
-            batalhas.conquista(tempo, luta)
+            sleep(tempo)
+            print('Parabéns{}!!! {} se tornou seu familiar!'.format(nome_player, luta))
             componentes.continuara(nome_player, tempo)
 
 # GRAYFLAG: final da segunda rota.
