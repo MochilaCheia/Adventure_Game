@@ -360,15 +360,18 @@ if acao == '1':
 
                     if acao == '1':
                         sleep(tempo)
-                        print('')
+                        print(' Pouco a pouco você perde seu sangue...')
                         sleep(tempo)
+                        print(' E sente sua consciência se esvaindo...')
+                        sleep(tempo)
+                        print(' ')
 
                         acao = input('\n')
 
 # GOLDFLAG: final de rota previsto
 # FLAG: história continua aqui #8
 
-                    elif acao == '1':
+                    elif acao == '2':
                         sleep(tempo)
                         print('Talvez seja pela perda de sangue, talvez seja '
                               'pela adrenalina ou talvez apenas seja por medo de morrer.')
