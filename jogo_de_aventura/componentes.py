@@ -14,6 +14,15 @@ def introducao(tempo):
     print('Não desista e divirta-se! bom jogo!')
 
 
+def continuara(nome_player, tempo):
+    sleep(tempo)
+    print(' Sua jornada ainda não acabou! teste as outras rotas e veja as outras possibilidades dessa história.')
+    sleep(tempo)
+    print(' Você tomou ótimas decicões até aqui!')
+    sleep(tempo)
+    print(' Você já é um grande héroi {}!!!'.format(nome_player))
+
+
 def final_incompleto(nome_player,tempo):
     sleep(tempo)
     print('Você morreu.')

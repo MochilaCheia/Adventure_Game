@@ -1,6 +1,12 @@
 import random
 from time import sleep
 
+
+def conquista(nome_player, tempo, luta):
+    sleep(tempo)
+    print('Parabéns{}!!! {} se tornou seu familiar!'.format(nome_player, luta))
+
+
 def luta_troll():
     golpes = ['3', '5', '7']
     ponto_critico = '7'
@@ -19,6 +25,7 @@ def luta_troll():
               '\nParabéns jovem espachim! você se saiu vitorioso!')
     else:
         print('Essa não é uma opção, jovem guerreiro.')
+
 
 def confronto_medusa():
     corpo_medusa = ['Cabeça', 'Pescoço', 'Torso', 'Barriga', 'Braços', 'Pernas']
@@ -47,6 +54,7 @@ def confronto_medusa():
               'pode transformas sua cabeça em um escudo.\n')
     else:
         print('Essa não uma opção, jovem espachim.')
+
 
 def azetris():
     golpe_fatal = 10

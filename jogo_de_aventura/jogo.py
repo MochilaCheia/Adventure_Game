@@ -1,18 +1,16 @@
 import random
 import componentes
+import batalhas
 import inventario
 from time import sleep
 
 tempo = int(input('Quantos segundos você gostaria até cada frase aparecer?\n'
                   'Digite apenas o número e lembre-se, as frases não são muito longas\n'))
 
-sleep(tempo)
-print('Vamos começar então!\n')
-
 componentes.introducao(tempo)
 
 sleep(tempo)
-nome_player = input('\nMas antes de começarmos, me diga seu nome jovem héroi: ')
+nome_player = input('\nMe diga seu nome jovem héroi: ')
 sleep(tempo)
 print(f'Seja bem vindo, {nome_player}! e boa aventura!\n')
 
@@ -80,10 +78,10 @@ if acao == '1':
 # FlAG: parte em construção e desenvolvimento
 
     if acao == '1':
-        monstros = ['Troll de diamante', 'Porco voador roxo', 'Arvore de seiva maligna']
-        criatura, luta = random.choice(monstros)
+        monstros = ['Troll de diamante', 'Dragão tornado', 'Tamandúa vampiro']
+        luta = random.choice(monstros)
         sleep(tempo)
-        print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um... {}\n'.format(criatura))
+        print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um... {}\n'.format(luta))
         sleep(tempo)
         print('E agora, o que você fará?\n')
         sleep(tempo)
@@ -103,27 +101,24 @@ if acao == '1':
 
         elif acao == '2':
             sleep(tempo)
-            print('Você se esconde em um arbusto e observa o comportamento do/da...')
+            print(' Você se esconde em um arbusto e observa o comportamento do {}'.format(luta))
+            sleep(tempo)
+            print(' Olhando mais de perto a criatura parece estar machucada')
+            sleep(tempo)
+            print(' Ela tem uma flecha envenenada nas costas')
+            sleep(tempo)
+            print(' Você então se aproxima cuidadosamente e retira a flecha')
+            sleep(tempo)
+            print(' A criatura reage violentamente, '
+                  'mas você arrisca sua vida ao se aproximar para estancar o sangramento')
+            sleep(tempo)
+            print(' Você leva uma golpe no processo, a dor que a criatura sente faz ela te atacar')
+            sleep(tempo)
+            print(' Mas você consegue salvá-la no final')
+            batalhas.conquista(tempo, luta)
+            componentes.continuara(nome_player, tempo)
 
-            acao = input('')
-
-            if acao == '1':
-                sleep(tempo)
-                print('')
-                sleep(tempo)
-                pass
-
-                acao = input('\n')
-
-            elif acao == '2':
-                sleep(tempo)
-                print('')
-                sleep(tempo)
-
-                acao = input('\n')
-
-# FLAG: função de luta entra nessa rota da história #1
-# FLAG: história continua aqui #1
+# GRAYFLAG: final da segunda rota.
 
     elif acao == '2':
         sleep(tempo)
