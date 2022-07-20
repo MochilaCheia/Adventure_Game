@@ -116,6 +116,9 @@ if acao == '1':
             print(' Mas você consegue salvá-la no final')
             sleep(tempo)
             print('Parabéns{}!!! {} se tornou seu familiar!'.format(nome_player, luta))
+            sleep(tempo)
+            print(' A partir de então você passou sua vida buscando novos seres,'
+                  'companheiros para a vida e os estudando aumentando seu conhecimento.')
             componentes.continuara(nome_player, tempo)
 
 # GRAYFLAG: final da segunda rota.
@@ -365,11 +368,13 @@ if acao == '1':
                         sleep(tempo)
                         print(' Já que a última coisas que você vê '
                               'são os outros lobos se posicionando pra te proteger.')
+                        sleep(tempo)
+                        print('Infelizmente você não resiste ao sangramento, mas parte satisfeito.')
+                        sleep(tempo)
+                        print(' Já que conquistou grandes companheiros no final.')
+                        componentes.continuara(nome_player, tempo)
 
-                        acao = input('\n')
-
-# GOLDFLAG: final de rota previsto
-# FLAG: história continua aqui #8
+# GRAYFLAG: final da oitava rota.
 
                     elif acao == '2':
                         sleep(tempo)
