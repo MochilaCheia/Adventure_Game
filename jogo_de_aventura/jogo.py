@@ -350,7 +350,7 @@ if acao == '1':
                     sleep(tempo)
                     print('Agora é hora de virar o jogo.')
 
-                    acao = input('\1) Você está ferido, concentre-se na defesa e em aguentar mais um pouco.\n'
+                    acao = input('\n1) Você está ferido, concentre-se na defesa e em aguentar mais um pouco.\n'
                                  '2) Avance, mesmo ferido só resta lutar agora.\n')
 
                     if acao == '1':
@@ -359,7 +359,12 @@ if acao == '1':
                         sleep(tempo)
                         print(' E sente sua consciência se esvaindo...')
                         sleep(tempo)
-                        print(' ')
+                        print(' Um dos lobos então o coloca em suas costas e corre na direção oposta a do monstro.')
+                        sleep(tempo)
+                        print(' Mesmo com sua ferida aberta, você se sente seguro.')
+                        sleep(tempo)
+                        print(' Já que a última coisas que você vê '
+                              'são os outros lobos se posicionando pra te proteger.')
 
                         acao = input('\n')
 
