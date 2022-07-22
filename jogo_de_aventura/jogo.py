@@ -315,8 +315,16 @@ if acao == '1':
 
                 elif acao == '2':
                     sleep(tempo)
-                    print('')
+                    print(' QUEM É VOCÊ, ME RESPONDA LOGO!!!')
                     sleep(tempo)
+                    print(' Eu?... - ela respondeu')
+                    sleep(tempo)
+                    print(' Sou a maldição dos reis tiranos, das dores da terra e do sangue injusto')
+                    sleep(tempo)
+                    print(' Se quiser descobrir terá que abrir mão da sua humanidade, está pronto pra isso?')
+                    sleep(tempo)
+                    print(' Claro que não, mas eu aceito seja lá o que for')
+
 
                     acao = input('\n')
 
