@@ -76,15 +76,33 @@ def azetris():
 
 
 def confronto_hydra():
-    desvios = ['Esquerda', 'Direita', 'Meio', 'Cima', 'Baixo']
-    ataque = input('Adivinha:')
-    nova_chance = 1
-    while nova_chance != 'Desisto':
-        regenerando_direcao = random.choice(desvios)
-        if ataque == regenerando_direcao:
-            print(regenerando_direcao)
-            print('Você acertou!')
-            nova_chance = input('continuar?')
+    ataque = ['Pela esquerda', 'Pela direita', 'Pelo meio', 'Por cima', 'Por baixo']
+    print(' Suas opções são: {}' .format(ataque))
+    dano = 0
+
+    while dano < 5:
+        desvio = input(' De onde você acha que está vindo o ataque? \n')
+        direcao = random.choice(ataque)
+
+        if desvio == direcao:
+            print(' A Hydra atacou {}'.format(direcao))
+            print(' E você conseguiu escapar!!!')
+            print(' Parabéns!')
+            dano += 6
+
+        elif desvio != direcao and desvio in ataque:
+            print(' Infelizmente o ataque não veio {}'.format(desvio))
+            print(' Mas você ainda consegue aguentar mais golpes')
+            dano += 1
+
+        else:
+            print(' Essa não é uma opção válida!')
+
+    if dano > 5:
+        print(' Parabéns!')
+
+    else:
+        print(' Você morreu')
 
 
 def ultima_luta():
@@ -100,4 +118,4 @@ def ultima_luta():
 
 
 if __name__ == '__main__':
-    pass
+    print(confronto_hydra())
