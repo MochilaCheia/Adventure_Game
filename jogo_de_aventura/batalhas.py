@@ -75,7 +75,9 @@ def azetris():
             break
 
 
-def confronto_hydra():
+def confronto_hydra(nome_player, tempo):
+    sleep(tempo)
+    print('A hydra então ataca e você precisa desviar!')
     ataque = ['Pela esquerda', 'Pela direita', 'Pelo meio', 'Por cima', 'Por baixo']
     print(' Suas opções são: {}' .format(ataque))
     dano = 0

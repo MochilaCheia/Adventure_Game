@@ -1,4 +1,5 @@
 import random
+import batalhas
 import componentes
 import inventario
 from time import sleep
@@ -315,18 +316,34 @@ if acao == '1':
 
                 elif acao == '2':
                     sleep(tempo)
-                    print(' QUEM É VOCÊ, ME RESPONDA LOGO!!!')
+                    print('"- QUEM É VOCÊ, ME RESPONDA LOGO!!!"')
                     sleep(tempo)
-                    print(' Eu?... - ela respondeu')
+                    print('"- Eu?... - ela respondeu')
                     sleep(tempo)
-                    print(' Sou a maldição dos reis tiranos, das dores da terra e do sangue injusto')
+                    print('Sou a maldição dos reis tiranos, das dores da terra e do sangue injusto')
                     sleep(tempo)
-                    print(' Se quiser descobrir terá que abrir mão da sua humanidade, está pronto pra isso?')
+                    print('"- Se quiser descobrir terá que abrir mão da sua humanidade, está pronto pra isso?"')
                     sleep(tempo)
-                    print(' Claro que não, mas eu aceito seja lá o que for')
-
-
-                    acao = input('\n')
+                    print('"- Claro que não, mas eu aceito seja lá o que for"')
+                    sleep(tempo)
+                    print('Aquele amontoado de carne vil começa a se misturar e unir.')
+                    sleep(tempo)
+                    print('Um enorme e grotesco monte de carne começa a tomar forma de algo,')
+                    sleep(tempo)
+                    print('Bem aos poucos.')
+                    sleep(tempo)
+                    print('Paralisade de medo você observa o instante que percebe o que é essa coisa...')
+                    sleep(tempo)
+                    print('Sua verdade identidade... Uma hydra!')
+                    sleep(tempo)
+                    print('Sua transformação termina e então começa a batalha:')
+                    batalhas.confronto_hydra(nome_player, tempo)
+                    print('Você venceu, mas infezlimente a hydra conseguiu escapar com vida')
+                    sleep(tempo)
+                    print('Desse dia em diante, você decidiu que seu maior objetivo seria procurar por ela')
+                    sleep(tempo)
+                    print('E mata-lá"!')
+                    componentes.continuara(nome_player, tempo)
 
 # FLAG: história continua aqui #7
 
@@ -366,20 +383,20 @@ if acao == '1':
 
                     if acao == '1':
                         sleep(tempo)
-                        print(' Pouco a pouco você perde seu sangue...')
+                        print('Pouco a pouco você perde seu sangue...')
                         sleep(tempo)
-                        print(' E sente sua consciência se esvaindo...')
+                        print('E sente sua consciência se esvaindo...')
                         sleep(tempo)
-                        print(' Um dos lobos então o coloca em suas costas e corre na direção oposta a do monstro.')
+                        print('Um dos lobos então o coloca em suas costas e corre na direção oposta a do monstro.')
                         sleep(tempo)
-                        print(' Mesmo com sua ferida aberta, você se sente seguro.')
+                        print('Mesmo com sua ferida aberta, você se sente seguro.')
                         sleep(tempo)
-                        print(' Já que a última coisas que você vê '
+                        print('Já que a última coisas que você vê '
                               'são os outros lobos se posicionando pra te proteger.')
                         sleep(tempo)
                         print('Infelizmente você não resiste ao sangramento, mas parte satisfeito.')
                         sleep(tempo)
-                        print(' Já que conquistou grandes companheiros no final.')
+                        print('Já que conquistou grandes companheiros no final.')
                         componentes.continuara(nome_player, tempo)
 
 # GRAYFLAG: final da oitava rota.
@@ -588,9 +605,9 @@ elif acao == '2':
     sleep(tempo)
     print('Enquanto corre pela floresta você tropeça e caí em um ninho de cobras-trovão.')
     sleep(tempo)
-    print('elas são conhecidas pelos apitos na ponta da calda que ao balançar emite o som de um trovão.')
+    print('Elas são conhecidas pelos apitos na ponta da calda que ao balançar emite o som de um trovão.')
     sleep(tempo)
-    print('você está desprotegido e deixou sua espada lá trás, você é atacado e morre lentamente com o veneno.')
+    print('Você está desprotegido e deixou sua espada lá trás, você é atacado e morre lentamente com o veneno.')
     sleep(tempo)
     componentes.final_incompleto(nome_player, tempo)
 

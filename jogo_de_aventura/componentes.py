@@ -16,7 +16,7 @@ def introducao(tempo):
 
 def continuara(nome_player, tempo):
     sleep(tempo)
-    print('Sua história por enquanto termina aqui.')
+    print('Sua história por enquanto termina aqui. {}'.format(nome_player))
     sleep(tempo)
     print(' Mas você ainda pode testar outras jornadas, '
           'teste as outras rotas e veja as outras possibilidades dessa história.')
