@@ -74,34 +74,36 @@ def azetris():
             print('Parabéns você conseguiu derrotar o Azetris!!!!')
             break
 
+# Utilizado
+
 
 def confronto_hydra(nome_player, tempo):
     sleep(tempo)
     print('A hydra então ataca e você precisa desviar!')
     ataque = ['Pela esquerda', 'Pela direita', 'Pelo meio', 'Por cima', 'Por baixo']
-    print(' Suas opções são: {}' .format(ataque))
+    print('Suas opções são: {}' .format(ataque))
     dano = 0
 
     while dano < 5:
-        desvio = input(' De onde você acha que está vindo o ataque? \n')
+        desvio = input('De onde você acha que está vindo o ataque? \n')
         direcao = random.choice(ataque)
 
         if desvio == direcao:
-            print(' A Hydra atacou {}'.format(direcao))
-            print(' E você conseguiu escapar!!!')
-            print(' Parabéns!')
+            print('A Hydra atacou {}'.format(direcao))
+            print('E você conseguiu escapar!!!')
+            print('Você se saiu vitorioso afinal, {}!'.format(nome_player))
             dano += 6
 
         elif desvio != direcao and desvio in ataque:
-            print(' Infelizmente o ataque não veio {}'.format(desvio))
-            print(' Mas você ainda consegue aguentar mais golpes')
+            print('Infelizmente, o ataque dela não veio {}'.format(desvio))
+            print('Mas você ainda consegue aguentar mais golpes, seja resiliente e continue! tente mais uma vez!')
             dano += 1
 
         else:
-            print(' Essa não é uma opção válida!')
+            print('Essa não é uma opção válida, meu guerreiro!')
 
     if dano > 5:
-        print(' Parabéns!')
+        print('Você conseguiu escapar de seus ataques! e sair vivo dessa batalha sangrenta!')
 
     else:
         print(' Você morreu')
@@ -120,4 +122,4 @@ def ultima_luta():
 
 
 if __name__ == '__main__':
-    print(confronto_hydra())
+    pass

@@ -345,7 +345,7 @@ if acao == '1':
                     print('E mata-lá"!')
                     componentes.continuara(nome_player, tempo)
 
-# FLAG: história continua aqui #7
+# GRAYFLAG: final da nona rota
 
             elif acao == '2':
                 sleep(tempo)
