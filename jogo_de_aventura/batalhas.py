@@ -95,7 +95,7 @@ def confronto_hydra(nome_player, tempo):
             dano += 6
 
         elif desvio != direcao and desvio in ataque:
-            print('Infelizmente, o ataque dela não veio {}'.format(desvio))
+            print('O ataque dela não veio {}'.format(desvio))
             print('Mas você ainda consegue aguentar mais golpes, seja resiliente e continue! tente mais uma vez!')
             dano += 1
 
@@ -104,9 +104,19 @@ def confronto_hydra(nome_player, tempo):
 
     if dano > 5:
         print('Você conseguiu escapar de seus ataques! e sair vivo dessa batalha sangrenta!')
+        sleep(tempo)
+        print('Você venceu, mas infezlimente a hydra conseguiu escapar com vida')
+        sleep(tempo)
+        print('Desse dia em diante, você decidiu que seu maior objetivo seria procurar por ela')
+        sleep(tempo)
+        print('E mata-lá"!')
 
     else:
-        print(' Você morreu')
+        print('Você se feriu além do limite, perdendo sangue demais')
+        sleep(tempo)
+        print('Essa foi sua última batalha em vida')
+        sleep(tempo)
+        print('Você morreu.')
 
 
 def ultima_luta():

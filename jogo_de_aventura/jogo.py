@@ -338,11 +338,6 @@ if acao == '1':
                     sleep(tempo)
                     print('Sua transformação termina e então começa a batalha:')
                     batalhas.confronto_hydra(nome_player, tempo)
-                    print('Você venceu, mas infezlimente a hydra conseguiu escapar com vida')
-                    sleep(tempo)
-                    print('Desse dia em diante, você decidiu que seu maior objetivo seria procurar por ela')
-                    sleep(tempo)
-                    print('E mata-lá"!')
                     componentes.continuara(nome_player, tempo)
 
 # GRAYFLAG: final da nona rota
