@@ -81,7 +81,12 @@ if acao == '1':
         monstros = ['Troll de diamante', 'Dragão tornado', 'Tamandúa vampiro']
         luta = random.choice(monstros)
         sleep(tempo)
-        print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um... {}\n'.format(luta))
+        print('Ao procurar comida na floresta, você se depara nada mais nada menos do que um {} selvagem!\n'.format(luta))
+
+        if luta == 'Troll de diamante':
+            batalhas.luta_troll(tempo)
+            componentes.continuara(nome_player, tempo)
+
         sleep(tempo)
         print('E agora, o que você fará?\n')
         sleep(tempo)

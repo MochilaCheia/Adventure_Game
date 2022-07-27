@@ -2,13 +2,11 @@ import random
 from time import sleep
 
 
-def luta_troll():
+def luta_troll(tempo):
     golpes = ['3', '5', '7']
     ponto_critico = '7'
 
-    sleep(2)
-    print('Um troll de diamante selvagem apareceu! e você precisa atacar!')
-    sleep(3)
+    sleep(tempo)
     escolha = input('Quantos golpes você vai dar?\nOpções: '+','.join(golpes))
 
     if escolha == '3':
