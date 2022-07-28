@@ -317,7 +317,7 @@ if acao == '1':
                     sleep(tempo)
                     componentes.final_incompleto(nome_player, tempo)
 
-# REDFLAG: final da sétima rota
+# REDFLAG: final da sexta rota.
 
                 elif acao == '2':
                     sleep(tempo)
@@ -345,7 +345,7 @@ if acao == '1':
                     batalhas.confronto_hydra(nome_player, tempo)
                     componentes.continuara(nome_player, tempo)
 
-# GRAYFLAG: final da nona rota
+# GRAYFLAG: final da sétima rota.
 
             elif acao == '2':
                 sleep(tempo)
@@ -451,7 +451,7 @@ if acao == '1':
                             sleep(tempo)
                             componentes.final_incompleto(nome_player, tempo)
 
-# REDFLAG: final da sexta rota
+# REDFLAG: final da nona rota.
 
                         elif acao == '2':
                             sleep(tempo)
@@ -476,7 +476,7 @@ if acao == '1':
                             sleep(tempo)
                             componentes.final_incompleto(nome_player, tempo)
 
-# REDFLAG: final da sétima rota
+# REDFLAG: final da décima rota.
 
                 elif acao == '2':
                     sleep(tempo)
@@ -528,7 +528,7 @@ if acao == '1':
                             sleep(tempo)
                             componentes.final_incompleto(nome_player, tempo)
 
-# REDFLAG: final da terceira rota.
+# REDFLAG: final da décima primeira rota.
 
                         elif acao == '2':
                             sleep(tempo)
@@ -573,7 +573,7 @@ if acao == '1':
                             print('Mas finalmente após milhares de anos... ')
                             componentes.final_incompleto(nome_player, tempo)
 
-# BLACKFLAG: final da quinta rota
+# BLACKFLAG: final da décima segunda rota.
 
                     elif acao == '2':
                         sleep(tempo)
@@ -599,7 +599,7 @@ if acao == '1':
                         print('E depois de dezenas de anos finalmente...')
                         componentes.final_incompleto(nome_player, tempo)
 
-# BLACKFLAG: final da quarta rota
+# BLACKFLAG: final da décima terceira rota.
 
 elif acao == '2':
     sleep(tempo)
@@ -611,4 +611,4 @@ elif acao == '2':
     sleep(tempo)
     componentes.final_incompleto(nome_player, tempo)
 
-# REDFLAG: final da segunda rota.
+# REDFLAG: final da décima quinta rota.
