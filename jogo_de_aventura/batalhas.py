@@ -117,17 +117,5 @@ def confronto_hydra(nome_player, tempo):
         print('Você morreu.')
 
 
-def ultima_luta():
-    protagonista = 100
-    antagonista = 100
-    golpe_espada = -5
-    golpe_machado = -15
-    soco = -5
-    chute = -10
-    cabecada = -3
-    print(protagonista, antagonista, golpe_machado, golpe_espada, soco, cabecada, chute)
-    # if, while ou for?
-
-
 if __name__ == '__main__':
     pass
