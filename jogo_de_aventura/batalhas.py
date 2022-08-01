@@ -122,20 +122,16 @@ def confronto_hydra(nome_player, tempo):
 def ultima_luta():
     protagonista = 15
     antagonista = 15
-    golpe_espada = -2
-    golpe_machado = -2
-    soco = -1
-    chute = -1
-    cabecada = 1
-    print(protagonista, antagonista, golpe_machado, golpe_espada, soco, cabecada, chute)
     vez = 0
 
     while protagonista == 0 or antagonista == 0:
-        if (vez%2) == 0:
-            print('vez do protagosnista')
+        vez += 1
+        if (vez % 2) == 1:
+            print('Vez do protagonista')
+            print('Escolha sua opção: ')
 
-        elif (vez%2) == 1:
-            print('vez do antagonista')
+        elif (vez % 2) == 0:
+            print('Vez do antagonista')
 
 
 if __name__ == '__main__':
